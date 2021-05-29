@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ITC-1-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
@@ -322,11 +322,11 @@ Text Label 6250 3800 2    50   ~ 0
 LED_6
 Entry Wire Line
 	6500 2950 6400 3050
-Text Label 6250 3350 2    50   ~ 0
+Text Label 6250 3650 2    50   ~ 0
 LED_7
 Entry Wire Line
 	6500 3100 6400 3200
-Text Label 6250 3200 2    50   ~ 0
+Text Label 6250 3500 2    50   ~ 0
 LED_8
 Entry Wire Line
 	6500 3250 6400 3350
@@ -340,7 +340,7 @@ Wire Wire Line
 	1500 4500 2950 4500
 Wire Wire Line
 	2950 4500 2950 4250
-Text Label 6250 3050 2    50   ~ 0
+Text Label 6250 3350 2    50   ~ 0
 LED_9
 Wire Wire Line
 	4450 4500 4450 4250
@@ -482,9 +482,9 @@ Entry Wire Line
 	6500 2400 6600 2500
 Entry Wire Line
 	6500 2900 6600 3000
-Text Label 6250 3650 2    50   ~ 0
+Text Label 6250 3200 2    50   ~ 0
 BUTT_1
-Text Label 6250 3500 2    50   ~ 0
+Text Label 6250 3050 2    50   ~ 0
 BUTT_2
 Wire Wire Line
 	5450 3500 6400 3500
@@ -1899,6 +1899,30 @@ Wire Wire Line
 	5450 3800 6400 3800
 Entry Wire Line
 	6400 3800 6500 3900
+Text Label 2875 13000 2    50   ~ 0
+3V3
+$Comp
+L elements:LOGO D1
+U 1 1 60B714C3
+P 4750 1000
+F 0 "D1" H 4675 1200 50  0001 C CNN
+F 1 "LOGO" H 4650 1000 50  0000 L CNN
+F 2 "N_ICO:ni_10x10" H 4750 1000 50  0001 C CNN
+F 3 "" H 4750 1000 50  0001 C CNN
+	1    4750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L elements:LOGO D2
+U 1 1 60BDB17A
+P 5250 1000
+F 0 "D2" H 5175 1200 50  0001 C CNN
+F 1 "LOGO" H 5150 1000 50  0000 L CNN
+F 2 "N_ICO:VLAD_10x10" H 5250 1000 50  0001 C CNN
+F 3 "" H 5250 1000 50  0001 C CNN
+	1    5250 1000
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	14500 1500 14500 4750
 Wire Bus Line
@@ -1907,6 +1931,4 @@ Wire Bus Line
 	6500 1500 6500 15000
 Wire Bus Line
 	1250 1500 1250 11750
-Text Label 2875 13000 2    50   ~ 0
-3V3
 $EndSCHEMATC

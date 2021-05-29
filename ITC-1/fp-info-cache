@@ -1,197 +1,134 @@
-44091551999570
-N_VD_HL
-display_EDS803_805
+30087258397293
+N_ICO
+ClimateGuard_10x12
 
 
 0
-40
-40
-N_VD_HL
-Fuse_1812
-Fuse SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://www.nikhef.nl/pub/departments/mt/projects/detectorR_D/dtddice/ERJ2G.pdf), generated with kicad-footprint-generator
-resistor handsolder
 0
-2
-2
-N_VD_HL
-IGBT_dpak
+0
+N_ICO
+ClimateGuard_13x18
 
 
 0
-3
-3
-N_VD_HL
-LED_D3.0mm
-LED, diameter 3.0mm, 2 pins
-LED diameter 3.0mm 2 pins
 0
-2
-2
-N_VD_HL
-oled_0.91_128x32
+0
+N_ICO
+ClimateGuard_QR_7x7
 
 
 0
-4
-4
-N_VD_HL
-SOD-80
+0
+0
+N_ICO
+ClimateGuard_QR_10x10
 
 
 0
-2
-2
-N_VD_HL
-TFT_2.8_INCH
+0
+0
+N_ICO
+El-nikitos_QR_10x10
 
 
 0
-18
-15
-N_VD_HL
-Диод_BAR43CFILM_SOT-23
-SOT-23, Single Diode
-SOT-23
 0
-3
-2
-N_VD_HL
-Диод_S13_SOD-123
-SOT-23, Single Diode
-SOT-23
 0
-2
-2
-N_VD_HL
-Диод_SMB
-SOT-23, Single Diode
-SOT-23
-0
-2
-2
-N_VD_HL
-Диод_SMB_pnp
-SOT-23, Single Diode
-SOT-23
-0
-2
-2
-N_VD_HL
-Диод_матрица_корпус_DB-1S
-SOT-23, Single Diode
-SOT-23
-0
-4
-4
-N_VD_HL
-ЖК_MT-16S2H
+N_ICO
+VLAD_10x10
 
 
 0
-20
-17
-N_VD_HL
-ЖК_MT-16S2H_2DRL
+0
+0
+N_ICO
+bleeper_4x33
 
 
 0
-18
-17
-N_VD_HL
-Зуммер_HPA17F
+0
+0
+N_ICO
+danger_220
 
 
 0
-2
-2
-N_VD_HL
-корпус_kd-3a
+0
+0
+N_ICO
+el-nikitos_19x7
 
 
 0
-2
-2
-N_VD_HL
-Светодиод_SMD_0603
+0
+0
+N_ICO
+el-nikitos_29x10
 
 
 0
-2
-2
-N_VD_HL
-Светодиод_SMD_neopixel_ws2812b
+0
+0
+N_ICO
+el-nikitos_43x15
 
 
 0
-4
-4
-N_VD_HL
-стабилитрон_DO-201_вертикальный
-LED, diameter 3.0mm, 2 pins
-LED diameter 3.0mm 2 pins
 0
-2
-2
-N_VD_HL
-Транзистор_IRLML6344TR_SOT-23
-SOT-23, Single Diode
-SOT-23
 0
-3
-3
-N_VD_HL
-Транзистор_N-канал_dpak
+N_ICO
+ing-plus_5x5
 
 
 0
-3
-3
-N_VD_HL
-Транзистор_NPN_SOT223
+0
+0
+N_ICO
+ing-plus_13x13
 
 
 0
-4
-4
-N_VD_HL
-Транзистор_NPN_SOT223_pnp
+0
+0
+N_ICO
+ing-plus_22x22
 
 
 0
-4
-4
-N_VD_HL
-Транзистор_NPN_ТО-220
+0
+0
+N_ICO
+instagram_3x3
 
 
 0
-4
-4
-N_VD_HL
-Транзистор_N_STP10NK60Z
+0
+0
+N_ICO
+ni_10x10
 
 
 0
-3
-3
-N_VD_HL
-Транзистор_P_IRF9Z24NPBF
+0
+0
+N_ICO
+skyer_19x4
 
 
 0
-3
-3
-N_VD_HL
-Транзистор_TO-220_COOLING
+0
+0
+N_ICO
+skyer_25x5
 
 
 0
-3
-3
-N_VD_HL
-фототранзистор-vt-900
+0
+0
+N_ICO
+trinity_32x10
 
 
 0
-2
-2
+0
+0
