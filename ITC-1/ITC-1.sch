@@ -26,28 +26,6 @@ F 3 "" H 2200 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L elements:Светодиод HL1
-U 1 1 609A5850
-P 7500 6500
-F 0 "HL1" H 7600 6650 60  0000 C CNN
-F 1 "КРАСНЫЙ" H 7650 6350 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 7800 6000 60  0001 C CNN
-F 3 "" H 7800 6000 60  0001 C CNN
-	1    7500 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL2
-U 1 1 609A6B58
-P 7500 7000
-F 0 "HL2" H 7600 7150 60  0000 C CNN
-F 1 "ЗЕЛЕНЫЙ" H 7650 6850 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 7800 6500 60  0001 C CNN
-F 3 "" H 7800 6500 60  0001 C CNN
-	1    7500 7000
-	1    0    0    -1  
-$EndComp
-$Comp
 L elements:кнопка K1
 U 1 1 609A8819
 P 8250 2500
@@ -68,182 +46,6 @@ F 2 "N_X:Кнопка_FSMSM" H 8125 3050 60  0001 C CNN
 F 3 "" H 8125 3050 60  0001 C CNN
 	1    8250 3000
 	-1   0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL3
-U 1 1 609AE24C
-P 7500 8200
-F 0 "HL3" H 7600 8350 60  0000 C CNN
-F 1 "КРАСНЫЙ" H 7650 8050 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 7800 7700 60  0001 C CNN
-F 3 "" H 7800 7700 60  0001 C CNN
-	1    7500 8200
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL4
-U 1 1 609AE256
-P 7500 8700
-F 0 "HL4" H 7600 8850 60  0000 C CNN
-F 1 "ЗЕЛЕНЫЙ" H 7650 8550 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 7800 8200 60  0001 C CNN
-F 3 "" H 7800 8200 60  0001 C CNN
-	1    7500 8700
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL5
-U 1 1 609AF4A4
-P 12500 1950
-F 0 "HL5" H 12600 2100 60  0000 C CNN
-F 1 "КРАСНЫЙ" H 12650 1800 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 12800 1450 60  0001 C CNN
-F 3 "" H 12800 1450 60  0001 C CNN
-	1    12500 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL6
-U 1 1 609AF4AE
-P 12500 2450
-F 0 "HL6" H 12600 2600 60  0000 C CNN
-F 1 "ЗЕЛЕНЫЙ" H 12650 2300 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 12800 1950 60  0001 C CNN
-F 3 "" H 12800 1950 60  0001 C CNN
-	1    12500 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL7
-U 1 1 609B042C
-P 12500 3700
-F 0 "HL7" H 12600 3850 60  0000 C CNN
-F 1 "КРАСНЫЙ" H 12650 3550 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 12800 3200 60  0001 C CNN
-F 3 "" H 12800 3200 60  0001 C CNN
-	1    12500 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL8
-U 1 1 609B0436
-P 12500 4200
-F 0 "HL8" H 12600 4350 60  0000 C CNN
-F 1 "ЗЕЛЕНЫЙ" H 12650 4050 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 12800 3700 60  0001 C CNN
-F 3 "" H 12800 3700 60  0001 C CNN
-	1    12500 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL9
-U 1 1 609B1684
-P 12500 5450
-F 0 "HL9" H 12600 5600 60  0000 C CNN
-F 1 "КРАСНЫЙ" H 12650 5300 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 12800 4950 60  0001 C CNN
-F 3 "" H 12800 4950 60  0001 C CNN
-	1    12500 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL10
-U 1 1 609B168E
-P 12500 5950
-F 0 "HL10" H 12600 6100 60  0000 C CNN
-F 1 "ЗЕЛЕНЫЙ" H 12650 5800 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 12800 5450 60  0001 C CNN
-F 3 "" H 12800 5450 60  0001 C CNN
-	1    12500 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL11
-U 1 1 609B3734
-P 12500 7200
-F 0 "HL11" H 12600 7350 60  0000 C CNN
-F 1 "КРАСНЫЙ" H 12650 7050 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 12800 6700 60  0001 C CNN
-F 3 "" H 12800 6700 60  0001 C CNN
-	1    12500 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL12
-U 1 1 609B373E
-P 12500 7700
-F 0 "HL12" H 12600 7850 60  0000 C CNN
-F 1 "ЗЕЛЕНЫЙ" H 12650 7550 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 12800 7200 60  0001 C CNN
-F 3 "" H 12800 7200 60  0001 C CNN
-	1    12500 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL13
-U 1 1 609B4DC4
-P 12500 8950
-F 0 "HL13" H 12600 9100 60  0000 C CNN
-F 1 "КРАСНЫЙ" H 12650 8800 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 12800 8450 60  0001 C CNN
-F 3 "" H 12800 8450 60  0001 C CNN
-	1    12500 8950
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL14
-U 1 1 609B4DCE
-P 12500 9450
-F 0 "HL14" H 12600 9600 60  0000 C CNN
-F 1 "ЗЕЛЕНЫЙ" H 12650 9300 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 12800 8950 60  0001 C CNN
-F 3 "" H 12800 8950 60  0001 C CNN
-	1    12500 9450
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL15
-U 1 1 609C1218
-P 15500 1950
-F 0 "HL15" H 15600 2100 60  0000 C CNN
-F 1 "КРАСНЫЙ" H 15650 1800 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 15800 1450 60  0001 C CNN
-F 3 "" H 15800 1450 60  0001 C CNN
-	1    15500 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL16
-U 1 1 609C1222
-P 15500 2450
-F 0 "HL16" H 15600 2600 60  0000 C CNN
-F 1 "ЗЕЛЕНЫЙ" H 15650 2300 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 15800 1950 60  0001 C CNN
-F 3 "" H 15800 1950 60  0001 C CNN
-	1    15500 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL17
-U 1 1 609C2548
-P 15500 3700
-F 0 "HL17" H 15600 3850 60  0000 C CNN
-F 1 "КРАСНЫЙ" H 15650 3550 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 15800 3200 60  0001 C CNN
-F 3 "" H 15800 3200 60  0001 C CNN
-	1    15500 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L elements:Светодиод HL18
-U 1 1 609C2552
-P 15500 4200
-F 0 "HL18" H 15600 4350 60  0000 C CNN
-F 1 "ЗЕЛЕНЫЙ" H 15650 4050 60  0000 C CNN
-F 2 "N_VD_HL:Светодиод_SMD_0603" H 15800 3700 60  0001 C CNN
-F 3 "" H 15800 3700 60  0001 C CNN
-	1    15500 4200
-	1    0    0    -1  
 $EndComp
 $Comp
 L elements:крепеж X1
@@ -828,10 +630,6 @@ F 5 "240 Ом" H 8550 6350 50  0000 C CNN "Номинал"
 $EndComp
 Wire Wire Line
 	7800 6500 8000 6500
-Wire Wire Line
-	7800 7000 8000 7000
-Wire Wire Line
-	8000 7000 8000 6500
 Connection ~ 8000 6500
 Wire Wire Line
 	8000 6500 8250 6500
@@ -867,12 +665,12 @@ Wire Wire Line
 Connection ~ 9000 7750
 Text Label 9250 7750 2    50   ~ 0
 GND
-Text Label 7000 7000 0    50   ~ 0
+Text Label 7000 6700 0    50   ~ 0
 3V3-GREEN
 Text Label 7000 6500 0    50   ~ 0
 3V3-RED
 Wire Wire Line
-	7500 7000 7000 7000
+	7500 6700 7000 6700
 Wire Wire Line
 	7000 6500 7500 6500
 Text Label 7000 7300 0    50   ~ 0
@@ -898,9 +696,7 @@ $EndComp
 Wire Wire Line
 	7800 8200 8000 8200
 Wire Wire Line
-	7800 8700 8000 8700
-Wire Wire Line
-	8000 8700 8000 8200
+	7800 8400 8000 8400
 Connection ~ 8000 8200
 Wire Wire Line
 	8000 8200 8250 8200
@@ -936,12 +732,12 @@ Wire Wire Line
 Connection ~ 9000 9450
 Text Label 9250 9450 2    50   ~ 0
 GND
-Text Label 7000 8700 0    50   ~ 0
+Text Label 7000 8400 0    50   ~ 0
 3V3-GREEN
 Text Label 7000 8200 0    50   ~ 0
 3V3-RED
 Wire Wire Line
-	7500 8700 7000 8700
+	7500 8400 7000 8400
 Wire Wire Line
 	7000 8200 7500 8200
 Text Label 7000 9000 0    50   ~ 0
@@ -967,9 +763,7 @@ $EndComp
 Wire Wire Line
 	12800 1950 13000 1950
 Wire Wire Line
-	12800 2450 13000 2450
-Wire Wire Line
-	13000 2450 13000 1950
+	12800 2150 13000 2150
 Connection ~ 13000 1950
 Wire Wire Line
 	13000 1950 13250 1950
@@ -1005,12 +799,12 @@ Wire Wire Line
 Connection ~ 14000 3200
 Text Label 14250 3200 2    50   ~ 0
 GND
-Text Label 12000 2450 0    50   ~ 0
+Text Label 12000 2150 0    50   ~ 0
 3V3-GREEN
 Text Label 12000 1950 0    50   ~ 0
 3V3-RED
 Wire Wire Line
-	12500 2450 12000 2450
+	12500 2150 12000 2150
 Wire Wire Line
 	12000 1950 12500 1950
 Text Label 12000 2750 0    50   ~ 0
@@ -1036,9 +830,7 @@ $EndComp
 Wire Wire Line
 	12800 3700 13000 3700
 Wire Wire Line
-	12800 4200 13000 4200
-Wire Wire Line
-	13000 4200 13000 3700
+	12800 3900 13000 3900
 Connection ~ 13000 3700
 Wire Wire Line
 	13000 3700 13250 3700
@@ -1074,12 +866,12 @@ Wire Wire Line
 Connection ~ 14000 4950
 Text Label 14250 4950 2    50   ~ 0
 GND
-Text Label 12000 4200 0    50   ~ 0
+Text Label 12000 3900 0    50   ~ 0
 3V3-GREEN
 Text Label 12000 3700 0    50   ~ 0
 3V3-RED
 Wire Wire Line
-	12500 4200 12000 4200
+	12500 3900 12000 3900
 Wire Wire Line
 	12000 3700 12500 3700
 Text Label 12000 4500 0    50   ~ 0
@@ -1105,9 +897,7 @@ $EndComp
 Wire Wire Line
 	12800 5450 13000 5450
 Wire Wire Line
-	12800 5950 13000 5950
-Wire Wire Line
-	13000 5950 13000 5450
+	12800 5650 13000 5650
 Connection ~ 13000 5450
 Wire Wire Line
 	13000 5450 13250 5450
@@ -1143,12 +933,12 @@ Wire Wire Line
 Connection ~ 14000 6700
 Text Label 14250 6700 2    50   ~ 0
 GND
-Text Label 12000 5950 0    50   ~ 0
+Text Label 12000 5650 0    50   ~ 0
 3V3-GREEN
 Text Label 12000 5450 0    50   ~ 0
 3V3-RED
 Wire Wire Line
-	12500 5950 12000 5950
+	12500 5650 12000 5650
 Wire Wire Line
 	12000 5450 12500 5450
 Text Label 12000 6250 0    50   ~ 0
@@ -1174,9 +964,7 @@ $EndComp
 Wire Wire Line
 	12800 7200 13000 7200
 Wire Wire Line
-	12800 7700 13000 7700
-Wire Wire Line
-	13000 7700 13000 7200
+	12800 7400 13000 7400
 Connection ~ 13000 7200
 Wire Wire Line
 	13000 7200 13250 7200
@@ -1212,12 +1000,12 @@ Wire Wire Line
 Connection ~ 14000 8450
 Text Label 14250 8450 2    50   ~ 0
 GND
-Text Label 12000 7700 0    50   ~ 0
+Text Label 12000 7400 0    50   ~ 0
 3V3-GREEN
 Text Label 12000 7200 0    50   ~ 0
 3V3-RED
 Wire Wire Line
-	12500 7700 12000 7700
+	12500 7400 12000 7400
 Wire Wire Line
 	12000 7200 12500 7200
 Text Label 12000 8000 0    50   ~ 0
@@ -1243,9 +1031,7 @@ $EndComp
 Wire Wire Line
 	12800 8950 13000 8950
 Wire Wire Line
-	12800 9450 13000 9450
-Wire Wire Line
-	13000 9450 13000 8950
+	12800 9150 13000 9150
 Connection ~ 13000 8950
 Wire Wire Line
 	13000 8950 13250 8950
@@ -1281,12 +1067,12 @@ Wire Wire Line
 Connection ~ 14000 10200
 Text Label 14250 10200 2    50   ~ 0
 GND
-Text Label 12000 9450 0    50   ~ 0
+Text Label 12000 9150 0    50   ~ 0
 3V3-GREEN
 Text Label 12000 8950 0    50   ~ 0
 3V3-RED
 Wire Wire Line
-	12500 9450 12000 9450
+	12500 9150 12000 9150
 Wire Wire Line
 	12000 8950 12500 8950
 Text Label 12000 9750 0    50   ~ 0
@@ -1312,9 +1098,7 @@ $EndComp
 Wire Wire Line
 	15800 1950 16000 1950
 Wire Wire Line
-	15800 2450 16000 2450
-Wire Wire Line
-	16000 2450 16000 1950
+	15800 2150 16000 2150
 Connection ~ 16000 1950
 Wire Wire Line
 	16000 1950 16250 1950
@@ -1350,12 +1134,12 @@ Wire Wire Line
 Connection ~ 17000 3200
 Text Label 17250 3200 2    50   ~ 0
 GND
-Text Label 15000 2450 0    50   ~ 0
+Text Label 15000 2150 0    50   ~ 0
 3V3-GREEN
 Text Label 15000 1950 0    50   ~ 0
 3V3-RED
 Wire Wire Line
-	15500 2450 15000 2450
+	15500 2150 15000 2150
 Wire Wire Line
 	15000 1950 15500 1950
 Text Label 15000 2750 0    50   ~ 0
@@ -1381,9 +1165,7 @@ $EndComp
 Wire Wire Line
 	15800 3700 16000 3700
 Wire Wire Line
-	15800 4200 16000 4200
-Wire Wire Line
-	16000 4200 16000 3700
+	15800 3900 16000 3900
 Connection ~ 16000 3700
 Wire Wire Line
 	16000 3700 16250 3700
@@ -1417,12 +1199,12 @@ Wire Wire Line
 Connection ~ 17000 4950
 Text Label 17250 4950 2    50   ~ 0
 GND
-Text Label 15000 4200 0    50   ~ 0
+Text Label 15000 3900 0    50   ~ 0
 3V3-GREEN
 Text Label 15000 3700 0    50   ~ 0
 3V3-RED
 Wire Wire Line
-	15500 4200 15000 4200
+	15500 3900 15000 3900
 Wire Wire Line
 	15000 3700 15500 3700
 Text Label 15000 4500 0    50   ~ 0
@@ -1946,16 +1728,124 @@ F 3 "" H 4250 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L elements:крепеж X5
-U 1 1 60BABF95
-P 4750 1000
-F 0 "X5" H 4878 1046 50  0000 L CNN
-F 1 "крепеж" H 4878 955 50  0000 L CNN
-F 2 "N_X:ОтверстиеD1.2" H 4750 1000 50  0001 C CNN
-F 3 "" H 4750 1000 50  0001 C CNN
-	1    4750 1000
+L elements_2020:Светодиод_сдвоенный_KPB-3025SURKCGKC HL1
+U 1 1 60BA091B
+P 7500 6500
+F 0 "HL1" H 7650 6731 60  0000 C CNN
+F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 7650 6731 60  0001 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_m3025" H 7800 6000 60  0001 C CNN
+F 3 "" H 7800 6000 60  0001 C CNN
+	1    7500 6500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7800 6700 8000 6700
+Wire Wire Line
+	8000 6700 8000 6500
+$Comp
+L elements_2020:Светодиод_сдвоенный_KPB-3025SURKCGKC HL2
+U 1 1 60BF0D52
+P 7500 8200
+F 0 "HL2" H 7650 8431 60  0000 C CNN
+F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 7650 8431 60  0001 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_m3025" H 7800 7700 60  0001 C CNN
+F 3 "" H 7800 7700 60  0001 C CNN
+	1    7500 8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 8400 8000 8200
+$Comp
+L elements_2020:Светодиод_сдвоенный_KPB-3025SURKCGKC HL3
+U 1 1 60C240BD
+P 12500 1950
+F 0 "HL3" H 12650 2181 60  0000 C CNN
+F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 12650 2181 60  0001 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_m3025" H 12800 1450 60  0001 C CNN
+F 3 "" H 12800 1450 60  0001 C CNN
+	1    12500 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 2150 13000 1950
+$Comp
+L elements_2020:Светодиод_сдвоенный_KPB-3025SURKCGKC HL4
+U 1 1 60C53F3C
+P 12500 3700
+F 0 "HL4" H 12650 3931 60  0000 C CNN
+F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 12650 3931 60  0001 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_m3025" H 12800 3200 60  0001 C CNN
+F 3 "" H 12800 3200 60  0001 C CNN
+	1    12500 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 3900 13000 3700
+$Comp
+L elements_2020:Светодиод_сдвоенный_KPB-3025SURKCGKC HL5
+U 1 1 60C8D527
+P 12500 5450
+F 0 "HL5" H 12650 5681 60  0000 C CNN
+F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 12650 5681 60  0001 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_m3025" H 12800 4950 60  0001 C CNN
+F 3 "" H 12800 4950 60  0001 C CNN
+	1    12500 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 5650 13000 5450
+$Comp
+L elements_2020:Светодиод_сдвоенный_KPB-3025SURKCGKC HL6
+U 1 1 60CB5F25
+P 12500 7200
+F 0 "HL6" H 12650 7431 60  0000 C CNN
+F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 12650 7431 60  0001 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_m3025" H 12800 6700 60  0001 C CNN
+F 3 "" H 12800 6700 60  0001 C CNN
+	1    12500 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 7400 13000 7200
+$Comp
+L elements_2020:Светодиод_сдвоенный_KPB-3025SURKCGKC HL7
+U 1 1 60CD6C65
+P 12500 8950
+F 0 "HL7" H 12650 9181 60  0000 C CNN
+F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 12650 9181 60  0001 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_m3025" H 12800 8450 60  0001 C CNN
+F 3 "" H 12800 8450 60  0001 C CNN
+	1    12500 8950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 9150 13000 8950
+$Comp
+L elements_2020:Светодиод_сдвоенный_KPB-3025SURKCGKC HL8
+U 1 1 60D2A1D0
+P 15500 1950
+F 0 "HL8" H 15650 2181 60  0000 C CNN
+F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 15650 2181 60  0001 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_m3025" H 15800 1450 60  0001 C CNN
+F 3 "" H 15800 1450 60  0001 C CNN
+	1    15500 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L elements_2020:Светодиод_сдвоенный_KPB-3025SURKCGKC HL9
+U 1 1 60D2AD4B
+P 15500 3700
+F 0 "HL9" H 15650 3931 60  0000 C CNN
+F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 15650 3931 60  0001 C CNN
+F 2 "N_VD_HL:Светодиод_SMD_m3025" H 15800 3200 60  0001 C CNN
+F 3 "" H 15800 3200 60  0001 C CNN
+	1    15500 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16000 2150 16000 1950
+Wire Wire Line
+	16000 3900 16000 3700
 Wire Bus Line
 	14500 1500 14500 4750
 Wire Bus Line
