@@ -476,14 +476,14 @@ $EndComp
 $Comp
 L elements:Конденсатор_керамический C2
 U 1 1 60B8FB9B
-P 4500 12400
-F 0 "C2" V 4480 12488 60  0000 L CNN
-F 1 "Конденсатор_керамический" H 4600 12300 60  0001 C CNN
-F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 4500 12400 60  0001 C CNN
-F 3 "" H 4500 12400 60  0001 C CNN
-F 4 "10 мкФ/6,3 В" V 4578 12488 50  0000 L CNN "Номинал"
-F 5 "С111" H 4500 12400 50  0001 C CNN "УГО"
-	1    4500 12400
+P 4250 12400
+F 0 "C2" V 4230 12488 60  0000 L CNN
+F 1 "Конденсатор_керамический" H 4350 12300 60  0001 C CNN
+F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 4250 12400 60  0001 C CNN
+F 3 "" H 4250 12400 60  0001 C CNN
+F 4 "10 мкФ/6,3 В" V 4328 12488 50  0000 L CNN "Номинал"
+F 5 "С111" H 4250 12400 50  0001 C CNN "УГО"
+	1    4250 12400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -504,32 +504,25 @@ Wire Wire Line
 Wire Wire Line
 	2500 12750 3650 12750
 Wire Wire Line
-	4500 12750 4500 12500
+	4250 12750 4250 12500
 Wire Wire Line
 	3650 12550 3650 12750
-Connection ~ 3650 12750
-Wire Wire Line
-	3650 12750 4500 12750
 Wire Wire Line
 	3250 12250 2500 12250
 Wire Wire Line
 	2500 12250 2500 12350
 Wire Wire Line
-	4050 12250 4500 12250
+	4250 12250 4250 12350
 Wire Wire Line
-	4500 12250 4500 12350
-Wire Wire Line
-	4500 12250 4750 12250
-Connection ~ 4500 12250
+	5000 12250 5250 12250
 Wire Wire Line
 	2500 12250 2000 12250
 Connection ~ 2500 12250
-Text Label 4750 12750 2    50   ~ 0
+Text Label 5250 12750 2    50   ~ 0
 GND
 Wire Wire Line
-	4750 12750 4500 12750
-Connection ~ 4500 12750
-Text Label 4750 12250 2    50   ~ 0
+	5250 12750 5000 12750
+Text Label 5250 12250 2    50   ~ 0
 3V3
 Text Label 2000 12250 0    50   ~ 0
 4-LION
@@ -1347,10 +1340,6 @@ Text Notes 9050 11150 0    50   ~ 0
 требует подобрать транзистор \nи проверить, подходит ли он
 Text Label 3500 10125 2    50   ~ 0
 3-LION
-Text Label 3500 9500 2    50   ~ 0
-2-LION
-Text Label 3500 8875 2    50   ~ 0
-1-LION
 $Comp
 L ITC-1-rescue:ИОП_LM4040BIM3-2.5_NOPB-MOTOR_2020_import G2
 U 1 1 60B2EC44
@@ -1431,9 +1420,9 @@ Text Label 1500 11000 0    50   ~ 0
 ADC1-CH0
 Text Label 1500 10125 0    50   ~ 0
 ADC1-CH3
-Text Label 1500 9500 0    50   ~ 0
-ADC1-CH6
 Text Label 1500 8875 0    50   ~ 0
+ADC1-CH6
+Text Label 1500 9500 0    50   ~ 0
 ADC1-CH7
 Text Label 1500 14000 0    50   ~ 0
 ADC1-CH4
@@ -1503,38 +1492,12 @@ GND
 Wire Wire Line
 	3325 10375 3500 10375
 Entry Wire Line
-	1250 9400 1350 9500
+	1250 8775 1350 8875
 $Comp
 L elements:Резистор_0,065Вт R39
 U 1 1 60E434FB
-P 3025 9750
-F 0 "R39" H 3025 9900 60  0000 C CNN
-F 1 "Резистор_0,065Вт" H 3025 9600 60  0001 C CNN
-F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 3025 9750 60  0001 C CNN
-F 3 "" H 3025 9750 60  0001 C CNN
-F 4 "R101" H 3025 9750 50  0001 C CNN "УГО"
-F 5 "10 кОм" H 3025 9600 50  0000 C CNN "Номинал"
-	1    3025 9750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 9500 2000 9500
-Wire Wire Line
-	2000 9500 2000 9750
-Wire Wire Line
-	2000 9750 2725 9750
-Connection ~ 2000 9500
-Text Label 3500 9750 2    50   ~ 0
-GND
-Wire Wire Line
-	3325 9750 3500 9750
-Entry Wire Line
-	1250 8775 1350 8875
-$Comp
-L elements:Резистор_0,065Вт R40
-U 1 1 60E5D454
 P 3025 9125
-F 0 "R40" H 3025 9275 60  0000 C CNN
+F 0 "R39" H 3025 9275 60  0000 C CNN
 F 1 "Резистор_0,065Вт" H 3025 8975 60  0001 C CNN
 F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 3025 9125 60  0001 C CNN
 F 3 "" H 3025 9125 60  0001 C CNN
@@ -1554,6 +1517,32 @@ Text Label 3500 9125 2    50   ~ 0
 GND
 Wire Wire Line
 	3325 9125 3500 9125
+Entry Wire Line
+	1250 9400 1350 9500
+$Comp
+L elements:Резистор_0,065Вт R40
+U 1 1 60E5D454
+P 3025 9750
+F 0 "R40" H 3025 9900 60  0000 C CNN
+F 1 "Резистор_0,065Вт" H 3025 9600 60  0001 C CNN
+F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 3025 9750 60  0001 C CNN
+F 3 "" H 3025 9750 60  0001 C CNN
+F 4 "R101" H 3025 9750 50  0001 C CNN "УГО"
+F 5 "10 кОм" H 3025 9600 50  0000 C CNN "Номинал"
+	1    3025 9750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 9500 2000 9500
+Wire Wire Line
+	2000 9500 2000 9750
+Wire Wire Line
+	2000 9750 2725 9750
+Connection ~ 2000 9500
+Text Label 3500 9750 2    50   ~ 0
+GND
+Wire Wire Line
+	3325 9750 3500 9750
 Entry Wire Line
 	1250 11550 1350 11650
 Wire Wire Line
@@ -1655,7 +1644,7 @@ Wire Wire Line
 Wire Wire Line
 	3750 10750 3750 11000
 Wire Wire Line
-	2000 10125 3875 10125
+	2000 10125 2125 10125
 Wire Wire Line
 	3750 11000 3750 11550
 Wire Wire Line
@@ -1670,13 +1659,11 @@ Wire Wire Line
 Wire Wire Line
 	4000 11350 4250 11350
 Wire Wire Line
-	2000 9500 4000 9500
-Wire Wire Line
-	4125 8875 4125 11250
+	2000 8875 2125 8875
 Wire Wire Line
 	4125 11250 4250 11250
 Wire Wire Line
-	2000 8875 4125 8875
+	2000 9500 2125 9500
 Wire Wire Line
 	5450 3800 6400 3800
 Entry Wire Line
@@ -1846,6 +1833,153 @@ Wire Wire Line
 	16000 2150 16000 1950
 Wire Wire Line
 	16000 3900 16000 3700
+$Comp
+L elements:Резистор_0,065Вт R24
+U 1 1 60BB05C8
+P 2425 10125
+F 0 "R24" H 2425 10275 60  0000 C CNN
+F 1 "Резистор_0,065Вт" H 2425 9975 60  0001 C CNN
+F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 2425 10125 60  0001 C CNN
+F 3 "" H 2425 10125 60  0001 C CNN
+F 4 "R101" H 2425 10125 50  0001 C CNN "УГО"
+F 5 "10 кОм" H 2425 9975 50  0000 C CNN "Номинал"
+	1    2425 10125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2725 10125 3875 10125
+$Comp
+L elements:Резистор_0,065Вт R20
+U 1 1 60BB1788
+P 2425 8875
+F 0 "R20" H 2425 9025 60  0000 C CNN
+F 1 "Резистор_0,065Вт" H 2425 8725 60  0001 C CNN
+F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 2425 8875 60  0001 C CNN
+F 3 "" H 2425 8875 60  0001 C CNN
+F 4 "R101" H 2425 8875 50  0001 C CNN "УГО"
+F 5 "10 кОм" H 2425 8725 50  0000 C CNN "Номинал"
+	1    2425 8875
+	1    0    0    -1  
+$EndComp
+$Comp
+L elements:Резистор_0,065Вт R19
+U 1 1 60BB21D7
+P 2425 9500
+F 0 "R19" H 2425 9650 60  0000 C CNN
+F 1 "Резистор_0,065Вт" H 2425 9350 60  0001 C CNN
+F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 2425 9500 60  0001 C CNN
+F 3 "" H 2425 9500 60  0001 C CNN
+F 4 "R101" H 2425 9500 50  0001 C CNN "УГО"
+F 5 "10 кОм" H 2425 9350 50  0000 C CNN "Номинал"
+	1    2425 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2725 9500 4000 9500
+Text Label 3500 8875 2    50   ~ 0
+1-LION
+Text Label 3500 9500 2    50   ~ 0
+2-LION
+Wire Wire Line
+	4125 8875 4125 11250
+Wire Wire Line
+	2725 8875 4125 8875
+$Comp
+L elements:Конденсатор_керамический C3
+U 1 1 60C6B107
+P 5000 12400
+F 0 "C3" V 4980 12488 60  0000 L CNN
+F 1 "Конденсатор_керамический" H 5100 12300 60  0001 C CNN
+F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 5000 12400 60  0001 C CNN
+F 3 "" H 5000 12400 60  0001 C CNN
+F 4 "10 мкФ/6,3 В" V 5078 12488 50  0000 L CNN "Номинал"
+F 5 "С111" H 5000 12400 50  0001 C CNN "УГО"
+	1    5000 12400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 12500 5000 12750
+Wire Wire Line
+	5000 12750 4250 12750
+Connection ~ 5000 12750
+Wire Wire Line
+	5000 12350 5000 12250
+Wire Wire Line
+	5000 12250 4250 12250
+Connection ~ 5000 12250
+Wire Wire Line
+	4050 12250 4250 12250
+Connection ~ 4250 12250
+Wire Wire Line
+	4250 12750 3650 12750
+Connection ~ 4250 12750
+Connection ~ 3650 12750
+$Comp
+L elements:Конденсатор_керамический C4
+U 1 1 60D5EB05
+P 4500 10300
+F 0 "C4" V 4500 10200 60  0000 R CNN
+F 1 "Конденсатор_керамический" H 4600 10200 60  0001 C CNN
+F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 4500 10300 60  0001 C CNN
+F 3 "" H 4500 10300 60  0001 C CNN
+F 4 "1 мкФ/25 В" V 4600 10250 50  0000 R CNN "Номинал"
+F 5 "С111" H 4500 10300 50  0001 C CNN "УГО"
+	1    4500 10300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3875 10125 4500 10125
+Connection ~ 3875 10125
+Wire Wire Line
+	4500 10125 4500 10250
+Text Label 4750 10625 2    50   ~ 0
+GND
+Wire Wire Line
+	4500 10400 4500 10625
+$Comp
+L elements:Конденсатор_керамический C5
+U 1 1 60DD38A0
+P 5125 10300
+F 0 "C5" V 5125 10200 60  0000 R CNN
+F 1 "Конденсатор_керамический" H 5225 10200 60  0001 C CNN
+F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 5125 10300 60  0001 C CNN
+F 3 "" H 5125 10300 60  0001 C CNN
+F 4 "1 мкФ/25 В" V 5225 10250 50  0000 R CNN "Номинал"
+F 5 "С111" H 5125 10300 50  0001 C CNN "УГО"
+	1    5125 10300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5125 10400 5125 10625
+Wire Wire Line
+	4500 10625 5125 10625
+Wire Wire Line
+	4000 9500 5125 9500
+Wire Wire Line
+	5125 9500 5125 10250
+Connection ~ 4000 9500
+$Comp
+L elements:Конденсатор_керамический C6
+U 1 1 60E3D74E
+P 5750 10300
+F 0 "C6" V 5750 10200 60  0000 R CNN
+F 1 "Конденсатор_керамический" H 5850 10200 60  0001 C CNN
+F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 5750 10300 60  0001 C CNN
+F 3 "" H 5750 10300 60  0001 C CNN
+F 4 "1 мкФ/25 В" V 5850 10250 50  0000 R CNN "Номинал"
+F 5 "С111" H 5750 10300 50  0001 C CNN "УГО"
+	1    5750 10300
+	0    -1   1    0   
+$EndComp
+Connection ~ 5125 10625
+Wire Wire Line
+	5750 10625 5750 10400
+Wire Wire Line
+	5125 10625 5750 10625
+Wire Wire Line
+	4125 8875 5750 8875
+Wire Wire Line
+	5750 8875 5750 10250
 Wire Bus Line
 	14500 1500 14500 4750
 Wire Bus Line
@@ -1854,4 +1988,5 @@ Wire Bus Line
 	6500 1500 6500 15000
 Wire Bus Line
 	1250 1500 1250 11750
+Connection ~ 4125 8875
 $EndSCHEMATC
