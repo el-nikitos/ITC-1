@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ITC-1-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
@@ -22,6 +22,7 @@ F 0 "A1" H 3725 2265 50  0000 C CNN
 F 1 "модуль_esp32_wroom_32_SMD" H 3725 2174 50  0000 C CNN
 F 2 "N_A:ESP32_WROOM32_pnp" H 2200 2000 50  0001 C CNN
 F 3 "" H 2200 2000 50  0001 C CNN
+F 4 "не заказывал, есть в наличии" H 2200 2000 50  0001 C CNN "LINK"
 	1    2200 2000
 	1    0    0    -1  
 $EndComp
@@ -33,6 +34,7 @@ F 0 "K1" H 8050 2700 60  0000 C CNN
 F 1 "кнопка" H 8050 2450 60  0000 C CNN
 F 2 "N_X:Кнопка_FSMSM" H 8125 2550 60  0001 C CNN
 F 3 "" H 8125 2550 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/tyco-1437566-3-fsmsm" H 8250 2500 50  0001 C CNN "LINK"
 	1    8250 2500
 	-1   0    0    -1  
 $EndComp
@@ -44,6 +46,7 @@ F 0 "K2" H 8050 3200 60  0000 C CNN
 F 1 "кнопка" H 8050 2950 60  0000 C CNN
 F 2 "N_X:Кнопка_FSMSM" H 8125 3050 60  0001 C CNN
 F 3 "" H 8125 3050 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/tyco-1437566-3-fsmsm" H 8250 3000 50  0001 C CNN "LINK"
 	1    8250 3000
 	-1   0    0    -1  
 $EndComp
@@ -55,6 +58,7 @@ F 0 "X1" H 2628 1046 50  0000 L CNN
 F 1 "крепеж" H 2628 955 50  0000 L CNN
 F 2 "N_X:Отверстие_М3" H 2500 1000 50  0001 C CNN
 F 3 "" H 2500 1000 50  0001 C CNN
+F 4 "pcb element" H 2500 1000 50  0001 C CNN "LINK"
 	1    2500 1000
 	1    0    0    -1  
 $EndComp
@@ -66,6 +70,7 @@ F 0 "X2" H 3128 1046 50  0000 L CNN
 F 1 "крепеж" H 3128 955 50  0000 L CNN
 F 2 "N_X:Отверстие_М3" H 3000 1000 50  0001 C CNN
 F 3 "" H 3000 1000 50  0001 C CNN
+F 4 "pcb element" H 3000 1000 50  0001 C CNN "LINK"
 	1    3000 1000
 	1    0    0    -1  
 $EndComp
@@ -221,6 +226,7 @@ F 0 "G1" H 3900 12400 50  0000 C CNN
 F 1 "стабилизатор_нерегулируемый_LM1117S33" H 3650 12424 50  0001 C CNN
 F 2 "N_VD_HL:Транзистор_NPN_SOT223_pnp" H 3300 12250 50  0001 C CNN
 F 3 "" H 3300 12250 50  0001 C CNN
+F 4 "https://www.chipdip.ru/product/lm1117gs-3.3" H 3300 12250 50  0001 C CNN "LINK"
 	1    3300 12250
 	1    0    0    -1  
 $EndComp
@@ -234,6 +240,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 7800 2500 60  0001 C CNN
 F 3 "" H 7800 2500 60  0001 C CNN
 F 4 "R101" H 7800 2500 50  0001 C CNN "УГО"
 F 5 "240 Ом" H 7800 2350 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/654254294" H 7800 2500 50  0001 C CNN "LINK"
 	1    7800 2500
 	1    0    0    -1  
 $EndComp
@@ -249,6 +256,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 7800 3000 60  0001 C CNN
 F 3 "" H 7800 3000 60  0001 C CNN
 F 4 "R101" H 7800 3000 50  0001 C CNN "УГО"
 F 5 "240 Ом" H 7800 2850 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/654254294" H 7800 3000 50  0001 C CNN "LINK"
 	1    7800 3000
 	1    0    0    -1  
 $EndComp
@@ -306,6 +314,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 3000 5450 60  0001 C CNN
 F 3 "" H 3000 5450 60  0001 C CNN
 F 4 "R101" H 3000 5450 50  0001 C CNN "УГО"
 F 5 "10 кОм" V 3100 5700 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 3000 5450 50  0001 C CNN "LINK"
 	1    3000 5450
 	0    1    1    0   
 $EndComp
@@ -338,6 +347,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 2500 5450 60  0001 C CNN
 F 3 "" H 2500 5450 60  0001 C CNN
 F 4 "R101" H 2500 5450 50  0001 C CNN "УГО"
 F 5 "10 кОм" V 2600 5700 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 2500 5450 50  0001 C CNN "LINK"
 	1    2500 5450
 	0    1    1    0   
 $EndComp
@@ -360,6 +370,7 @@ F 0 "VT3" H 8600 7801 60  0000 C CNN
 F 1 "Транзистор_полевой_N-IRLML6344TR" H 8600 7801 60  0001 C CNN
 F 2 "N_VD_HL:Транзистор_IRLML6344TR_SOT-23" H 8450 7300 60  0001 C CNN
 F 3 "" H 8450 7300 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/irlml6344trpbf" H 8450 7300 50  0001 C CNN "LINK"
 	1    8450 7300
 	1    0    0    -1  
 $EndComp
@@ -371,6 +382,7 @@ F 0 "VT2" H 7904 5549 60  0000 C CNN
 F 1 "Транзистор_полевой_P-канал(IRLML2246TRPBF)" H 7904 6251 60  0001 C CNN
 F 2 "N_VD_HL:Транзистор_IRLML6344TR_SOT-23" H 7950 6400 60  0001 C CNN
 F 3 "" H 7750 5750 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/irlml2246trpbf" H 7750 5750 50  0001 C CNN "LINK"
 	1    7750 5750
 	1    0    0    1   
 $EndComp
@@ -382,6 +394,7 @@ F 0 "VT1" H 7904 4049 60  0000 C CNN
 F 1 "Транзистор_полевой_P-канал(IRLML2246TRPBF)" H 7904 4751 60  0001 C CNN
 F 2 "N_VD_HL:Транзистор_IRLML6344TR_SOT-23" H 7950 4900 60  0001 C CNN
 F 3 "" H 7750 4250 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/irlml2246trpbf" H 7750 4250 50  0001 C CNN "LINK"
 	1    7750 4250
 	1    0    0    1   
 $EndComp
@@ -393,6 +406,7 @@ F 0 "VT4" H 8600 9501 60  0000 C CNN
 F 1 "Транзистор_полевой_N-IRLML6344TR" H 8600 9501 60  0001 C CNN
 F 2 "N_VD_HL:Транзистор_IRLML6344TR_SOT-23" H 8450 9000 60  0001 C CNN
 F 3 "" H 8450 9000 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/irlml6344trpbf" H 8450 9000 50  0001 C CNN "LINK"
 	1    8450 9000
 	1    0    0    -1  
 $EndComp
@@ -404,6 +418,7 @@ F 0 "VT5" H 13600 3251 60  0000 C CNN
 F 1 "Транзистор_полевой_N-IRLML6344TR" H 13600 3251 60  0001 C CNN
 F 2 "N_VD_HL:Транзистор_IRLML6344TR_SOT-23" H 13450 2750 60  0001 C CNN
 F 3 "" H 13450 2750 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/irlml6344trpbf" H 13450 2750 50  0001 C CNN "LINK"
 	1    13450 2750
 	1    0    0    -1  
 $EndComp
@@ -415,6 +430,7 @@ F 0 "VT6" H 13600 5001 60  0000 C CNN
 F 1 "Транзистор_полевой_N-IRLML6344TR" H 13600 5001 60  0001 C CNN
 F 2 "N_VD_HL:Транзистор_IRLML6344TR_SOT-23" H 13450 4500 60  0001 C CNN
 F 3 "" H 13450 4500 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/irlml6344trpbf" H 13450 4500 50  0001 C CNN "LINK"
 	1    13450 4500
 	1    0    0    -1  
 $EndComp
@@ -426,6 +442,7 @@ F 0 "VT7" H 13600 6751 60  0000 C CNN
 F 1 "Транзистор_полевой_N-IRLML6344TR" H 13600 6751 60  0001 C CNN
 F 2 "N_VD_HL:Транзистор_IRLML6344TR_SOT-23" H 13450 6250 60  0001 C CNN
 F 3 "" H 13450 6250 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/irlml6344trpbf" H 13450 6250 50  0001 C CNN "LINK"
 	1    13450 6250
 	1    0    0    -1  
 $EndComp
@@ -437,6 +454,7 @@ F 0 "VT8" H 13600 8501 60  0000 C CNN
 F 1 "Транзистор_полевой_N-IRLML6344TR" H 13600 8501 60  0001 C CNN
 F 2 "N_VD_HL:Транзистор_IRLML6344TR_SOT-23" H 13450 8000 60  0001 C CNN
 F 3 "" H 13450 8000 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/irlml6344trpbf" H 13450 8000 50  0001 C CNN "LINK"
 	1    13450 8000
 	1    0    0    -1  
 $EndComp
@@ -448,6 +466,7 @@ F 0 "VT9" H 13600 10251 60  0000 C CNN
 F 1 "Транзистор_полевой_N-IRLML6344TR" H 13600 10251 60  0001 C CNN
 F 2 "N_VD_HL:Транзистор_IRLML6344TR_SOT-23" H 13450 9750 60  0001 C CNN
 F 3 "" H 13450 9750 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/irlml6344trpbf" H 13450 9750 50  0001 C CNN "LINK"
 	1    13450 9750
 	1    0    0    -1  
 $EndComp
@@ -459,6 +478,7 @@ F 0 "VT10" H 16600 3251 60  0000 C CNN
 F 1 "Транзистор_полевой_N-IRLML6344TR" H 16600 3251 60  0001 C CNN
 F 2 "N_VD_HL:Транзистор_IRLML6344TR_SOT-23" H 16450 2750 60  0001 C CNN
 F 3 "" H 16450 2750 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/irlml6344trpbf" H 16450 2750 50  0001 C CNN "LINK"
 	1    16450 2750
 	1    0    0    -1  
 $EndComp
@@ -470,6 +490,7 @@ F 0 "VT11" H 16600 5001 60  0000 C CNN
 F 1 "Транзистор_полевой_N-IRLML6344TR" H 16600 5001 60  0001 C CNN
 F 2 "N_VD_HL:Транзистор_IRLML6344TR_SOT-23" H 16450 4500 60  0001 C CNN
 F 3 "" H 16450 4500 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/irlml6344trpbf" H 16450 4500 50  0001 C CNN "LINK"
 	1    16450 4500
 	1    0    0    -1  
 $EndComp
@@ -483,6 +504,7 @@ F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 4250 12400 60  0001 C CNN
 F 3 "" H 4250 12400 60  0001 C CNN
 F 4 "10 мкФ/6,3 В" V 4328 12488 50  0000 L CNN "Номинал"
 F 5 "С111" H 4250 12400 50  0001 C CNN "УГО"
+F 6 "https://www.chipdip.ru/product/grm188r60j106me47d" H 4250 12400 50  0001 C CNN "LINK"
 	1    4250 12400
 	0    1    1    0   
 $EndComp
@@ -496,6 +518,7 @@ F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 2500 12400 60  0001 C CNN
 F 3 "" H 2500 12400 60  0001 C CNN
 F 4 "1 мкФ/25 В" V 2600 12300 50  0000 R CNN "Номинал"
 F 5 "С111" H 2500 12400 50  0001 C CNN "УГО"
+F 6 "https://www.chipdip.ru/product/grm188r71e105ka12d" H 2500 12400 50  0001 C CNN "LINK"
 	1    2500 12400
 	0    -1   1    0   
 $EndComp
@@ -536,6 +559,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 7800 3750 60  0001 C CNN
 F 3 "" H 7800 3750 60  0001 C CNN
 F 4 "R101" H 7800 3750 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 7800 3600 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 7800 3750 50  0001 C CNN "LINK"
 	1    7800 3750
 	1    0    0    -1  
 $EndComp
@@ -577,6 +601,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 7800 5250 60  0001 C CNN
 F 3 "" H 7800 5250 60  0001 C CNN
 F 4 "R101" H 7800 5250 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 7800 5100 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 7800 5250 50  0001 C CNN "LINK"
 	1    7800 5250
 	1    0    0    -1  
 $EndComp
@@ -618,6 +643,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 8550 6500 60  0001 C CNN
 F 3 "" H 8550 6500 60  0001 C CNN
 F 4 "R101" H 8550 6500 50  0001 C CNN "УГО"
 F 5 "240 Ом" H 8550 6350 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/654254294" H 8550 6500 50  0001 C CNN "LINK"
 	1    8550 6500
 	1    0    0    -1  
 $EndComp
@@ -640,6 +666,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 8500 7750 60  0001 C CNN
 F 3 "" H 8500 7750 60  0001 C CNN
 F 4 "R101" H 8500 7750 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 8500 7600 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 8500 7750 50  0001 C CNN "LINK"
 	1    8500 7750
 	1    0    0    -1  
 $EndComp
@@ -683,6 +710,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 8550 8200 60  0001 C CNN
 F 3 "" H 8550 8200 60  0001 C CNN
 F 4 "R101" H 8550 8200 50  0001 C CNN "УГО"
 F 5 "240 Ом" H 8550 8050 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/654254294" H 8550 8200 50  0001 C CNN "LINK"
 	1    8550 8200
 	1    0    0    -1  
 $EndComp
@@ -707,6 +735,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 8500 9450 60  0001 C CNN
 F 3 "" H 8500 9450 60  0001 C CNN
 F 4 "R101" H 8500 9450 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 8500 9300 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 8500 9450 50  0001 C CNN "LINK"
 	1    8500 9450
 	1    0    0    -1  
 $EndComp
@@ -750,6 +779,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 13550 1950 60  0001 C CNN
 F 3 "" H 13550 1950 60  0001 C CNN
 F 4 "R101" H 13550 1950 50  0001 C CNN "УГО"
 F 5 "240 Ом" H 13550 1800 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/654254294" H 13550 1950 50  0001 C CNN "LINK"
 	1    13550 1950
 	1    0    0    -1  
 $EndComp
@@ -774,6 +804,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 13500 3200 60  0001 C CNN
 F 3 "" H 13500 3200 60  0001 C CNN
 F 4 "R101" H 13500 3200 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 13500 3050 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 13500 3200 50  0001 C CNN "LINK"
 	1    13500 3200
 	1    0    0    -1  
 $EndComp
@@ -817,6 +848,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 13550 3700 60  0001 C CNN
 F 3 "" H 13550 3700 60  0001 C CNN
 F 4 "R101" H 13550 3700 50  0001 C CNN "УГО"
 F 5 "240 Ом" H 13550 3550 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/654254294" H 13550 3700 50  0001 C CNN "LINK"
 	1    13550 3700
 	1    0    0    -1  
 $EndComp
@@ -841,6 +873,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 13500 4950 60  0001 C CNN
 F 3 "" H 13500 4950 60  0001 C CNN
 F 4 "R101" H 13500 4950 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 13500 4800 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 13500 4950 50  0001 C CNN "LINK"
 	1    13500 4950
 	1    0    0    -1  
 $EndComp
@@ -884,6 +917,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 13550 5450 60  0001 C CNN
 F 3 "" H 13550 5450 60  0001 C CNN
 F 4 "R101" H 13550 5450 50  0001 C CNN "УГО"
 F 5 "240 Ом" H 13550 5300 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/654254294" H 13550 5450 50  0001 C CNN "LINK"
 	1    13550 5450
 	1    0    0    -1  
 $EndComp
@@ -908,6 +942,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 13500 6700 60  0001 C CNN
 F 3 "" H 13500 6700 60  0001 C CNN
 F 4 "R101" H 13500 6700 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 13500 6550 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 13500 6700 50  0001 C CNN "LINK"
 	1    13500 6700
 	1    0    0    -1  
 $EndComp
@@ -951,6 +986,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 13550 7200 60  0001 C CNN
 F 3 "" H 13550 7200 60  0001 C CNN
 F 4 "R101" H 13550 7200 50  0001 C CNN "УГО"
 F 5 "240 Ом" H 13550 7050 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/654254294" H 13550 7200 50  0001 C CNN "LINK"
 	1    13550 7200
 	1    0    0    -1  
 $EndComp
@@ -975,6 +1011,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 13500 8450 60  0001 C CNN
 F 3 "" H 13500 8450 60  0001 C CNN
 F 4 "R101" H 13500 8450 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 13500 8300 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 13500 8450 50  0001 C CNN "LINK"
 	1    13500 8450
 	1    0    0    -1  
 $EndComp
@@ -1018,6 +1055,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 13550 8950 60  0001 C CNN
 F 3 "" H 13550 8950 60  0001 C CNN
 F 4 "R101" H 13550 8950 50  0001 C CNN "УГО"
 F 5 "240 Ом" H 13550 8800 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/654254294" H 13550 8950 50  0001 C CNN "LINK"
 	1    13550 8950
 	1    0    0    -1  
 $EndComp
@@ -1042,6 +1080,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 13500 10200 60  0001 C CN
 F 3 "" H 13500 10200 60  0001 C CNN
 F 4 "R101" H 13500 10200 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 13500 10050 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 13500 10200 50  0001 C CNN "LINK"
 	1    13500 10200
 	1    0    0    -1  
 $EndComp
@@ -1085,6 +1124,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 16550 1950 60  0001 C CNN
 F 3 "" H 16550 1950 60  0001 C CNN
 F 4 "R101" H 16550 1950 50  0001 C CNN "УГО"
 F 5 "240 Ом" H 16550 1800 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/654254294" H 16550 1950 50  0001 C CNN "LINK"
 	1    16550 1950
 	1    0    0    -1  
 $EndComp
@@ -1109,6 +1149,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 16500 3200 60  0001 C CNN
 F 3 "" H 16500 3200 60  0001 C CNN
 F 4 "R101" H 16500 3200 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 16500 3050 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 16500 3200 50  0001 C CNN "LINK"
 	1    16500 3200
 	1    0    0    -1  
 $EndComp
@@ -1152,6 +1193,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 16550 3700 60  0001 C CNN
 F 3 "" H 16550 3700 60  0001 C CNN
 F 4 "R101" H 16550 3700 50  0001 C CNN "УГО"
 F 5 "240 Ом" H 16550 3550 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/654254294" H 16550 3700 50  0001 C CNN "LINK"
 	1    16550 3700
 	1    0    0    -1  
 $EndComp
@@ -1176,6 +1218,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 16500 4950 60  0001 C CNN
 F 3 "" H 16500 4950 60  0001 C CNN
 F 4 "R101" H 16500 4950 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 16500 4800 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 16500 4950 50  0001 C CNN "LINK"
 	1    16500 4950
 	1    0    0    -1  
 $EndComp
@@ -1225,6 +1268,7 @@ F 0 "XP4" H 4950 7350 60  0000 R CNN
 F 1 "Вилка_PLS6" H 5050 6525 60  0001 C CNN
 F 2 "N_X:Вилка_PLD6_вертикальная" H 4750 7300 60  0001 C CNN
 F 3 "" H 4750 7300 60  0001 C CNN
+F 4 "не заказана, есть в наличии" H 4750 7300 50  0001 C CNN "LINK"
 	1    4750 7300
 	-1   0    0    -1  
 $EndComp
@@ -1236,6 +1280,7 @@ F 0 "XP5" H 5000 11200 60  0000 R CNN
 F 1 "Вилка_PLS6" H 5050 10375 60  0001 C CNN
 F 2 "N_X:Вилка_PLD6_вертикальная" H 4750 11150 60  0001 C CNN
 F 3 "" H 4750 11150 60  0001 C CNN
+F 4 "не заказана, есть в наличии" H 4750 11150 50  0001 C CNN "LINK"
 	1    4750 11150
 	-1   0    0    -1  
 $EndComp
@@ -1282,6 +1327,7 @@ F 0 "VD1" V 9046 10697 50  0000 R CNN
 F 1 "Диод_шоттки" V 8955 10697 50  0000 R CNN
 F 2 "N_VD_HL:Диод_SMB_pnp" H 8750 10800 50  0001 C CNN
 F 3 "" H 8750 10800 50  0001 C CNN
+F 4 "https://www.chipdip.ru/product/smbj18a" H 8850 10800 50  0001 C CNN "LINK"
 	1    8850 10800
 	0    1    -1   0   
 $EndComp
@@ -1306,6 +1352,7 @@ F 0 "VT13" H 9153 11553 60  0000 L CNN
 F 1 "Транзистор_NPN_1Б-2(4)К-3Э_0" H 9153 11447 60  0000 L CNN
 F 2 "N_VD_HL:Транзистор_NPN_SOT223_pnp" H 8550 11500 60  0001 C CNN
 F 3 "" H 8550 11500 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/pbss4540z.115" H 8550 11500 50  0001 C CNN "LINK"
 	1    8550 11500
 	1    0    0    -1  
 $EndComp
@@ -1319,6 +1366,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 8050 11500 60  0001 C CNN
 F 3 "" H 8050 11500 60  0001 C CNN
 F 4 "R101" H 8050 11500 50  0001 C CNN "УГО"
 F 5 "1 кОм" H 8050 11350 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/10149" H 8050 11500 50  0001 C CNN "LINK"
 	1    8050 11500
 	1    0    0    -1  
 $EndComp
@@ -1364,6 +1412,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 2500 13450 60  0001 C CNN
 F 3 "" H 2500 13450 60  0001 C CNN
 F 4 "R101" H 2500 13450 50  0001 C CNN "УГО"
 F 5 "10 кОм" V 2600 13700 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 2500 13450 50  0001 C CNN "LINK"
 	1    2500 13450
 	0    1    1    0   
 $EndComp
@@ -1435,7 +1484,8 @@ F 1 "Резистор_0,065Вт" H 2425 10850 60  0001 C CNN
 F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 2425 11000 60  0001 C CNN
 F 3 "" H 2425 11000 60  0001 C CNN
 F 4 "R101" H 2425 11000 50  0001 C CNN "УГО"
-F 5 "10 кОм" H 2425 10850 50  0000 C CNN "Номинал"
+F 5 "68 кОм" H 2425 10850 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/36049" H 2425 11000 50  0001 C CNN "LINK"
 	1    2425 11000
 	1    0    0    -1  
 $EndComp
@@ -1449,6 +1499,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 3025 11250 60  0001 C CNN
 F 3 "" H 3025 11250 60  0001 C CNN
 F 4 "R101" H 3025 11250 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 3025 11100 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 3025 11250 50  0001 C CNN "LINK"
 	1    3025 11250
 	1    0    0    -1  
 $EndComp
@@ -1477,6 +1528,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 3025 10375 60  0001 C CNN
 F 3 "" H 3025 10375 60  0001 C CNN
 F 4 "R101" H 3025 10375 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 3025 10225 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 3025 10375 50  0001 C CNN "LINK"
 	1    3025 10375
 	1    0    0    -1  
 $EndComp
@@ -1503,6 +1555,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 3025 9125 60  0001 C CNN
 F 3 "" H 3025 9125 60  0001 C CNN
 F 4 "R101" H 3025 9125 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 3025 8975 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 3025 9125 50  0001 C CNN "LINK"
 	1    3025 9125
 	1    0    0    -1  
 $EndComp
@@ -1529,6 +1582,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 3025 9750 60  0001 C CNN
 F 3 "" H 3025 9750 60  0001 C CNN
 F 4 "R101" H 3025 9750 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 3025 9600 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 3025 9750 50  0001 C CNN "LINK"
 	1    3025 9750
 	1    0    0    -1  
 $EndComp
@@ -1573,6 +1627,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 2425 7500 60  0001 C CNN
 F 3 "" H 2425 7500 60  0001 C CNN
 F 4 "R101" H 2425 7500 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 2425 7350 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 2425 7500 50  0001 C CNN "LINK"
 	1    2425 7500
 	1    0    0    -1  
 $EndComp
@@ -1586,6 +1641,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 3025 7750 60  0001 C CNN
 F 3 "" H 3025 7750 60  0001 C CNN
 F 4 "R101" H 3025 7750 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 3025 7600 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 3025 7750 50  0001 C CNN "LINK"
 	1    3025 7750
 	1    0    0    -1  
 $EndComp
@@ -1678,6 +1734,7 @@ F 0 "D1" H 5675 1200 50  0001 C CNN
 F 1 "LOGO" H 5650 1000 50  0000 L CNN
 F 2 "N_ICO:ni_10x10" H 5750 1000 50  0001 C CNN
 F 3 "" H 5750 1000 50  0001 C CNN
+F 4 "pcb element" H 5750 1000 50  0001 C CNN "LINK"
 	1    5750 1000
 	1    0    0    -1  
 $EndComp
@@ -1689,6 +1746,7 @@ F 0 "D2" H 6175 1200 50  0001 C CNN
 F 1 "LOGO" H 6150 1000 50  0000 L CNN
 F 2 "N_ICO:VLAD_10x10" H 6250 1000 50  0001 C CNN
 F 3 "" H 6250 1000 50  0001 C CNN
+F 4 "pcb element" H 6250 1000 50  0001 C CNN "LINK"
 	1    6250 1000
 	1    0    0    -1  
 $EndComp
@@ -1700,6 +1758,7 @@ F 0 "X3" H 3878 1046 50  0000 L CNN
 F 1 "крепеж" H 3878 955 50  0000 L CNN
 F 2 "N_X:ОтверстиеD1.2" H 3750 1000 50  0001 C CNN
 F 3 "" H 3750 1000 50  0001 C CNN
+F 4 "pcb element" H 3750 1000 50  0001 C CNN "LINK"
 	1    3750 1000
 	1    0    0    -1  
 $EndComp
@@ -1711,6 +1770,7 @@ F 0 "X4" H 4378 1046 50  0000 L CNN
 F 1 "крепеж" H 4378 955 50  0000 L CNN
 F 2 "N_X:ОтверстиеD1.2" H 4250 1000 50  0001 C CNN
 F 3 "" H 4250 1000 50  0001 C CNN
+F 4 "pcb element" H 4250 1000 50  0001 C CNN "LINK"
 	1    4250 1000
 	1    0    0    -1  
 $EndComp
@@ -1722,6 +1782,7 @@ F 0 "HL1" H 7650 6731 60  0000 C CNN
 F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 7650 6731 60  0001 C CNN
 F 2 "N_VD_HL:Светодиод_SMD_m3025" H 7800 6000 60  0001 C CNN
 F 3 "" H 7800 6000 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/kpb-3025surkcgkc" H 7500 6500 50  0001 C CNN "LINK"
 	1    7500 6500
 	1    0    0    -1  
 $EndComp
@@ -1737,6 +1798,7 @@ F 0 "HL2" H 7650 8431 60  0000 C CNN
 F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 7650 8431 60  0001 C CNN
 F 2 "N_VD_HL:Светодиод_SMD_m3025" H 7800 7700 60  0001 C CNN
 F 3 "" H 7800 7700 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/kpb-3025surkcgkc" H 7500 8200 50  0001 C CNN "LINK"
 	1    7500 8200
 	1    0    0    -1  
 $EndComp
@@ -1750,6 +1812,7 @@ F 0 "HL3" H 12650 2181 60  0000 C CNN
 F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 12650 2181 60  0001 C CNN
 F 2 "N_VD_HL:Светодиод_SMD_m3025" H 12800 1450 60  0001 C CNN
 F 3 "" H 12800 1450 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/kpb-3025surkcgkc" H 12500 1950 50  0001 C CNN "LINK"
 	1    12500 1950
 	1    0    0    -1  
 $EndComp
@@ -1763,6 +1826,7 @@ F 0 "HL4" H 12650 3931 60  0000 C CNN
 F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 12650 3931 60  0001 C CNN
 F 2 "N_VD_HL:Светодиод_SMD_m3025" H 12800 3200 60  0001 C CNN
 F 3 "" H 12800 3200 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/kpb-3025surkcgkc" H 12500 3700 50  0001 C CNN "LINK"
 	1    12500 3700
 	1    0    0    -1  
 $EndComp
@@ -1776,6 +1840,7 @@ F 0 "HL5" H 12650 5681 60  0000 C CNN
 F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 12650 5681 60  0001 C CNN
 F 2 "N_VD_HL:Светодиод_SMD_m3025" H 12800 4950 60  0001 C CNN
 F 3 "" H 12800 4950 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/kpb-3025surkcgkc" H 12500 5450 50  0001 C CNN "LINK"
 	1    12500 5450
 	1    0    0    -1  
 $EndComp
@@ -1789,6 +1854,7 @@ F 0 "HL6" H 12650 7431 60  0000 C CNN
 F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 12650 7431 60  0001 C CNN
 F 2 "N_VD_HL:Светодиод_SMD_m3025" H 12800 6700 60  0001 C CNN
 F 3 "" H 12800 6700 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/kpb-3025surkcgkc" H 12500 7200 50  0001 C CNN "LINK"
 	1    12500 7200
 	1    0    0    -1  
 $EndComp
@@ -1802,6 +1868,7 @@ F 0 "HL7" H 12650 9181 60  0000 C CNN
 F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 12650 9181 60  0001 C CNN
 F 2 "N_VD_HL:Светодиод_SMD_m3025" H 12800 8450 60  0001 C CNN
 F 3 "" H 12800 8450 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/kpb-3025surkcgkc" H 12500 8950 50  0001 C CNN "LINK"
 	1    12500 8950
 	1    0    0    -1  
 $EndComp
@@ -1815,6 +1882,7 @@ F 0 "HL8" H 15650 2181 60  0000 C CNN
 F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 15650 2181 60  0001 C CNN
 F 2 "N_VD_HL:Светодиод_SMD_m3025" H 15800 1450 60  0001 C CNN
 F 3 "" H 15800 1450 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/kpb-3025surkcgkc" H 15500 1950 50  0001 C CNN "LINK"
 	1    15500 1950
 	1    0    0    -1  
 $EndComp
@@ -1826,6 +1894,7 @@ F 0 "HL9" H 15650 3931 60  0000 C CNN
 F 1 "Светодиод_сдвоенный_KPB-3025SURKCGKC" H 15650 3931 60  0001 C CNN
 F 2 "N_VD_HL:Светодиод_SMD_m3025" H 15800 3200 60  0001 C CNN
 F 3 "" H 15800 3200 60  0001 C CNN
+F 4 "https://www.chipdip.ru/product/kpb-3025surkcgkc" H 15500 3700 50  0001 C CNN "LINK"
 	1    15500 3700
 	1    0    0    -1  
 $EndComp
@@ -1842,7 +1911,8 @@ F 1 "Резистор_0,065Вт" H 2425 9975 60  0001 C CNN
 F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 2425 10125 60  0001 C CNN
 F 3 "" H 2425 10125 60  0001 C CNN
 F 4 "R101" H 2425 10125 50  0001 C CNN "УГО"
-F 5 "10 кОм" H 2425 9975 50  0000 C CNN "Номинал"
+F 5 "51 кОм" H 2425 9975 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/469851073" H 2425 10125 50  0001 C CNN "LINK"
 	1    2425 10125
 	1    0    0    -1  
 $EndComp
@@ -1858,6 +1928,7 @@ F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 2425 8875 60  0001 C CNN
 F 3 "" H 2425 8875 60  0001 C CNN
 F 4 "R101" H 2425 8875 50  0001 C CNN "УГО"
 F 5 "10 кОм" H 2425 8725 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 2425 8875 50  0001 C CNN "LINK"
 	1    2425 8875
 	1    0    0    -1  
 $EndComp
@@ -1870,7 +1941,8 @@ F 1 "Резистор_0,065Вт" H 2425 9350 60  0001 C CNN
 F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 2425 9500 60  0001 C CNN
 F 3 "" H 2425 9500 60  0001 C CNN
 F 4 "R101" H 2425 9500 50  0001 C CNN "УГО"
-F 5 "10 кОм" H 2425 9350 50  0000 C CNN "Номинал"
+F 5 "30 кОм" H 2425 9350 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/20824" H 2425 9500 50  0001 C CNN "LINK"
 	1    2425 9500
 	1    0    0    -1  
 $EndComp
@@ -1894,6 +1966,7 @@ F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 5000 12400 60  0001 C CNN
 F 3 "" H 5000 12400 60  0001 C CNN
 F 4 "10 мкФ/6,3 В" V 5078 12488 50  0000 L CNN "Номинал"
 F 5 "С111" H 5000 12400 50  0001 C CNN "УГО"
+F 6 "https://www.chipdip.ru/product/grm188r60j106me47d" H 5000 12400 50  0001 C CNN "LINK"
 	1    5000 12400
 	0    1    1    0   
 $EndComp
@@ -1924,6 +1997,7 @@ F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 4500 10300 60  0001 C CNN
 F 3 "" H 4500 10300 60  0001 C CNN
 F 4 "1 мкФ/25 В" V 4600 10250 50  0000 R CNN "Номинал"
 F 5 "С111" H 4500 10300 50  0001 C CNN "УГО"
+F 6 "https://www.chipdip.ru/product/grm188r71e105ka12d" H 4500 10300 50  0001 C CNN "LINK"
 	1    4500 10300
 	0    -1   1    0   
 $EndComp
@@ -1946,6 +2020,7 @@ F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 5125 10300 60  0001 C CNN
 F 3 "" H 5125 10300 60  0001 C CNN
 F 4 "1 мкФ/25 В" V 5225 10250 50  0000 R CNN "Номинал"
 F 5 "С111" H 5125 10300 50  0001 C CNN "УГО"
+F 6 "https://www.chipdip.ru/product/grm188r71e105ka12d" H 5125 10300 50  0001 C CNN "LINK"
 	1    5125 10300
 	0    -1   1    0   
 $EndComp
@@ -1968,6 +2043,7 @@ F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 5750 10300 60  0001 C CNN
 F 3 "" H 5750 10300 60  0001 C CNN
 F 4 "1 мкФ/25 В" V 5850 10250 50  0000 R CNN "Номинал"
 F 5 "С111" H 5750 10300 50  0001 C CNN "УГО"
+F 6 "https://www.chipdip.ru/product/grm188r71e105ka12d" H 5750 10300 50  0001 C CNN "LINK"
 	1    5750 10300
 	0    -1   1    0   
 $EndComp
@@ -1980,6 +2056,7 @@ Wire Wire Line
 	4125 8875 5750 8875
 Wire Wire Line
 	5750 8875 5750 10250
+Connection ~ 4125 8875
 Wire Bus Line
 	14500 1500 14500 4750
 Wire Bus Line
@@ -1988,5 +2065,4 @@ Wire Bus Line
 	6500 1500 6500 15000
 Wire Bus Line
 	1250 1500 1250 11750
-Connection ~ 4125 8875
 $EndSCHEMATC
