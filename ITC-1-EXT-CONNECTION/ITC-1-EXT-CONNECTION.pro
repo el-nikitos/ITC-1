@@ -1,4 +1,4 @@
-update=27.06.2021 17:18:50
+update=воскресенье, 27 июня 2021 г., 19:23:19
 version=1
 last_client=kicad
 [general]
@@ -34,10 +34,10 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=DXF/
+PlotDirectoryName=PDF/
 SubpartIdSeparator=46
 SubpartFirstId=49
 NetFmtName=
 SpiceAjustPassiveValues=0
-LabSize=50
+LabSize=138
 ERC_TestSimilarLabels=1
