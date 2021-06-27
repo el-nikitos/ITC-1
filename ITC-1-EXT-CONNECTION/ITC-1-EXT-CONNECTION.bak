@@ -47,7 +47,7 @@ F 3 "" H 6000 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3000 4000 0    138  ~ 28
-1.LION-4
+LION-4
 Text Label 3000 4500 0    138  ~ 28
 CHARGE-SENS
 Text Label 3000 5000 0    138  ~ 28
@@ -63,7 +63,7 @@ LION-2
 Text Label 8000 5000 2    138  ~ 28
 LION-3
 Text Label 8000 5500 2    138  ~ 28
-2.LION-4
+LION-4
 Text Label 8000 6000 2    138  ~ 28
 1.0V
 Text Label 8000 6500 2    138  ~ 28
