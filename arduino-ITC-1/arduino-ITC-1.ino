@@ -25,21 +25,31 @@ boolean b_BTN_R = false;
 boolean b_BTN_L_lock = false;
 boolean b_BTN_R_lock = false;
 
+boolean b_engine_start = false;
+
 int int_speed = 0;
 int int_battery = 0;
 int int_btn_L_count = 0,
     int_btn_R_count = 0,
-    int_btn_count_limit = 500;
+    int_btn_count_limit = 400;
 
 int             int_time_counter = 0;
-unsigned long   ulong_time_millis = 0;
+unsigned long   ulong_time_millis = 0,
+                ulong_time_log_millis = 0;
 boolean         b_time_trigger = false;
+
+int int_time_to_start = 3000,
+    int_time_to_stop = 30000,
+    int_time_to_send_log = 2000,
+    int_time_to_view_battery = 5000;
 
 float f_aref = 0,
       f_lion1 = 0,
       f_lion2 = 0,
       f_lion3 = 0,
-      f_lion4 = 0;
+      f_lion4 = 0,
+      f_min_U = 3.2,
+      f_max_U = 3.8;
       
 float f_analog_koef = 0,  // Bird for Volt
       f_lion1_koef = 2.0,
@@ -49,10 +59,10 @@ float f_analog_koef = 0,  // Bird for Volt
       
 float f_2v5 = 2.5;
 
-int int_pwm_freq = 25,
-    int_pwm_resolution = 10,
+int int_pwm_freq = 50,
+    int_pwm_resolution = 6,
     int_pwm_channel = 0,
-    int_pwm_koef = 113;
+    int_pwm_koef = 7;
 
 void setup() {
   init_pins();
@@ -72,11 +82,18 @@ void setup() {
   ledcSetup( int_pwm_channel, int_pwm_freq, int_pwm_resolution );
   ledcAttachPin( DRIVE, int_pwm_channel );
   ledcWrite( int_pwm_channel, 0 );
+
+  int_battery = 5; // for test only
+
+  while ( (millis()) < int_time_to_view_battery )  {
+    display_battery();
+  }
   
   Serial.begin(115200);
   Serial.println("ITC-1-0N6, Start!");
 
-  //ulong_time_millis = millis();
+  ulong_time_millis = millis();
+  ulong_time_log_millis = millis();
 }
 
 void loop() {
@@ -89,47 +106,32 @@ void loop() {
   int_battery = 9 - int_speed;    // for test only
 
   if ( ( (digitalRead(BTN_L)) == LOW ) & ( (digitalRead(BTN_R)) == LOW ) )  {
-    desplay_battery();
+    display_battery();
   } else {
-    desplay_speed();
+    display_speed();
   }
 
-  ledcWrite( int_pwm_channel, int_pwm_koef*int_speed );
-  /*
-  digitalWrite(DRIVE, HIGH);
-  delay(50);
-  digitalWrite(DRIVE, LOW);
-  delay(50);
-  */
-  /*
-  Serial.print("UREF: ");
-  Serial.println( f_aref );
-
-  Serial.print("LION1: ");
-  Serial.println( f_lion1 );
-
-  Serial.print("LION2: ");
-  Serial.println( f_lion2 );
-
-  Serial.print("LION3: ");
-  Serial.println( f_lion3 );
-
-  Serial.print("LION4: ");
-  Serial.println( f_lion4 );
-
-  Serial.print("A KOEF: ");
-  Serial.println( f_analog_koef );
-  */
+  if (b_engine_start == true) {
+    ledcWrite( int_pwm_channel, int_pwm_koef*int_speed );
+  } else {
+    ledcWrite( int_pwm_channel, 0 );
+  }
   
-  send_logs();
-  /*
-  digitalWrite( DRIVE, LOW );
-  Serial.println("Drive turn-off");
-  delay(2000);
-  digitalWrite( DRIVE, HIGH );
-  Serial.println("Drive turn-on");
-  delay(2000);
-  */
+  if (( millis() - ulong_time_millis ) > int_time_to_start) {
+    b_engine_start = true;
+  }
+
+  if ( ( millis() - ulong_time_millis ) > (int_time_to_start+int_time_to_stop) ) {
+    b_engine_start = false;
+    int_speed = 0;
+  }
+
+
+  if ( (millis() - ulong_time_log_millis) > int_time_to_send_log ) {
+      send_logs();
+      ulong_time_log_millis = millis();
+  }
+  //send_logs();
 }
 
 void send_logs()  {
@@ -139,11 +141,19 @@ void send_logs()  {
   Serial.print("BTN_R: ");
   Serial.println( b_BTN_R );
   
-
+/*
   Serial.print("BTN_count: ");
   Serial.println( int_btn_L_count );
   Serial.println( int_btn_R_count );
-
+*/
+  Serial.print("LI-1: ");
+  Serial.println( f_lion1 );
+  Serial.print("LI-2: ");
+  Serial.println( f_lion2 );
+  Serial.print("LI-3: ");
+  Serial.println( f_lion3 );
+  Serial.print("LI-4: ");
+  Serial.println( f_lion4 );
 
   Serial.print("SPEED: ");
   Serial.println( int_speed );
@@ -173,6 +183,7 @@ void speed_change() {
     int_speed = int_speed - 1;
     b_BTN_L_lock=true;
 
+    //ulong_time_millis = millis();
     //send_logs();
   }
 
@@ -180,11 +191,13 @@ void speed_change() {
     int_speed = int_speed + 1;
     b_BTN_R_lock=true;
 
+    //ulong_time_millis = millis();
     //send_logs();
   }
 
-  if (int_speed<0)  {
+  if (int_speed<=0)  {
     int_speed = 0;
+    b_engine_start = false;
   }
 
   if (int_speed>9)  {
@@ -195,7 +208,8 @@ void speed_change() {
 void read_BTN() {
   if ( (digitalRead(BTN_L)) == LOW )  {
     b_BTN_L = btn_L_push_check();
-
+    
+    ulong_time_millis = millis();
     //send_logs();
   } else {
     b_BTN_L = false;
@@ -205,7 +219,8 @@ void read_BTN() {
 
   if ( (digitalRead(BTN_R)) == LOW )  {
     b_BTN_R = btn_R_push_check();
-
+    
+    ulong_time_millis = millis();
     //send_logs();
   } else {
     b_BTN_R = false;
@@ -249,7 +264,6 @@ void blink_pin (int b_pin)  {
   turn_on_red( b_pin );
   delay(delay_time);
   turn_off( b_pin );
-  
 }
 
 void turn_on_red(int pin) {
@@ -310,17 +324,8 @@ void init_pins()  {
   pinMode( BTN_R, INPUT_PULLUP );
 }
 
-/*
-void time_counter() {
-  int int_time_quant = 10; //ms
-  unsigned long ulong_diff_time = millis();
-  
-  ulong_diff_time = ulong_diff_time - ulong_time_millis;
-  
-  ulong_time_millis = millis();
-}
-*/
-void desplay_speed()  {
+
+void display_speed()  {
   switch ( int_speed ) {
     case 1:
       turn_on_red( LED_1 );
@@ -443,7 +448,7 @@ void desplay_speed()  {
   }
 }
 
-void desplay_battery()  {
+void display_battery()  {
   switch ( int_battery ) {
     case 1:
       turn_on_green( LED_1 );
