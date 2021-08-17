@@ -79,6 +79,27 @@ X ~ 4 300 -200 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# elements_2020_Стабилитрон_1N5352BRLG_вертикальный
+#
+DEF elements_2020_Стабилитрон_1N5352BRLG_вертикальный VD 0 40 Y Y 1 F N
+F0 "VD" 175 125 39 H V C CNN
+F1 "elements_2020_Стабилитрон_1N5352BRLG_вертикальный" 175 -225 39 H I C CNN
+F2 "N_VD_HL:стабилитрон_DO-201_вертикальный" 150 -325 39 H I C CNN
+F3 "" -100 0 39 H I C CNN
+F4 "15 В" 150 -150 39 H V C CNN "INFO"
+F5 "https://www.chipdip.ru/product/1n5352brlg-2" 150 -425 50 H I C CNN "LINK"
+DRAW
+P 2 0 1 0 50 0 200 0 N
+P 2 0 1 0 175 -75 175 0 N
+P 2 0 1 0 175 75 150 75 N
+P 2 0 1 0 175 75 175 0 N
+P 2 0 1 0 200 0 250 0 N
+P 4 0 1 0 125 50 125 -50 175 0 125 50 N
+X ~ 1 0 0 50 R 50 50 1 1 I
+X ~ 2 300 0 50 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
 # elements_LOGO
 #
 DEF elements_LOGO D 0 40 Y Y 1 F N
@@ -291,18 +312,19 @@ X ~ 1 0 0 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# elements_стабилизатор_нерегулируемый_LM1117S33
+# elements_стабилизатор_нерегулируемый_LM1117S33-SOT223
 #
-DEF elements_стабилизатор_нерегулируемый_LM1117S33 G 0 40 Y Y 1 F N
-F0 "G" 600 150 50 H V C CNN
-F1 "elements_стабилизатор_нерегулируемый_LM1117S33" 1000 -350 50 H V C CNN
-F2 "N_VD_HL:Транзистор_NPN_SOT223" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF elements_стабилизатор_нерегулируемый_LM1117S33-SOT223 G 0 40 Y Y 1 F N
+F0 "G" 650 150 50 H V C CNN
+F1 "elements_стабилизатор_нерегулируемый_LM1117S33-SOT223" 1050 -350 50 H V C CNN
+F2 "N_VD_HL:Транзистор_NPN_SOT223" 50 0 50 H I C CNN
+F3 "" 50 0 50 H I C CNN
 DRAW
-S 700 -250 0 100 0 1 0 f
-X GND 1 350 -300 50 U 50 50 1 1 P
-X 3В3 2 750 0 50 L 50 50 1 1 O
-X 4...15_В 3 -50 0 50 R 50 50 1 1 I
+S 750 -250 50 100 0 1 0 f
+X GND 1 400 -300 50 U 50 50 1 1 P
+X 3В3 2 800 0 50 L 50 50 1 1 O
+X 4...15_В 3 0 0 50 R 50 50 1 1 I
+X BOT 4 800 -200 50 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #

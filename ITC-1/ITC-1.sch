@@ -194,15 +194,15 @@ Wire Wire Line
 Text Label 1500 5500 0    50   ~ 0
 BOOT_UART_RX
 $Comp
-L elements:стабилизатор_нерегулируемый_LM1117S33 G1
+L elements:стабилизатор_нерегулируемый_LM1117S33-SOT223 G1
 U 1 1 60AA5032
-P 3300 12250
-F 0 "G1" H 3900 12400 50  0000 C CNN
-F 1 "стабилизатор_нерегулируемый_LM1117S33" H 3650 12424 50  0001 C CNN
-F 2 "N_VD_HL:Транзистор_NPN_SOT223_pnp" H 3300 12250 50  0001 C CNN
-F 3 "" H 3300 12250 50  0001 C CNN
-F 4 "https://www.chipdip.ru/product/lm1117gs-3.3" H 3300 12250 50  0001 C CNN "LINK"
-	1    3300 12250
+P 2750 12500
+F 0 "G1" H 3350 12650 50  0000 C CNN
+F 1 "стабилизатор_нерегулируемый_LM1117S33" H 3100 12674 50  0001 C CNN
+F 2 "N_VD_HL:Транзистор_NPN_SOT223_pnp" H 2750 12500 50  0001 C CNN
+F 3 "" H 2750 12500 50  0001 C CNN
+F 4 "https://www.chipdip.ru/product/lm1117gs-3.3" H 2750 12500 50  0001 C CNN "LINK"
+	1    2750 12500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -444,53 +444,51 @@ $EndComp
 $Comp
 L elements:Конденсатор_керамический C2
 U 1 1 60B8FB9B
-P 4250 12400
-F 0 "C2" V 4230 12488 60  0000 L CNN
-F 1 "Конденсатор_керамический" H 4350 12300 60  0001 C CNN
-F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 4250 12400 60  0001 C CNN
-F 3 "" H 4250 12400 60  0001 C CNN
-F 4 "10 мкФ/6,3 В" V 4328 12488 50  0000 L CNN "Номинал"
-F 5 "С111" H 4250 12400 50  0001 C CNN "УГО"
-F 6 "https://www.chipdip.ru/product/grm188r60j106me47d" H 4250 12400 50  0001 C CNN "LINK"
-	1    4250 12400
+P 4250 12650
+F 0 "C2" V 4230 12738 60  0000 L CNN
+F 1 "Конденсатор_керамический" H 4350 12550 60  0001 C CNN
+F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 4250 12650 60  0001 C CNN
+F 3 "" H 4250 12650 60  0001 C CNN
+F 4 "10 мкФ/6,3 В" V 4328 12738 50  0000 L CNN "Номинал"
+F 5 "С111" H 4250 12650 50  0001 C CNN "УГО"
+F 6 "https://www.chipdip.ru/product/grm188r60j106me47d" H 4250 12650 50  0001 C CNN "LINK"
+	1    4250 12650
 	0    1    1    0   
 $EndComp
 $Comp
 L elements:Конденсатор_керамический C1
 U 1 1 60B913A1
-P 2500 12400
-F 0 "C1" V 2500 12300 60  0000 R CNN
-F 1 "Конденсатор_керамический" H 2600 12300 60  0001 C CNN
-F 2 "N_RLC:Конденсатор_SMD_IEC_0805" H 2500 12400 60  0001 C CNN
-F 3 "" H 2500 12400 60  0001 C CNN
-F 4 "10 мкФ/25 В" V 2600 12300 50  0000 R CNN "Номинал"
-F 5 "С111" H 2500 12400 50  0001 C CNN "УГО"
-F 6 "https://www.chipdip.ru/product/grm188r71e105ka12d" H 2500 12400 50  0001 C CNN "LINK"
-	1    2500 12400
+P 2000 12650
+F 0 "C1" V 2000 12550 60  0000 R CNN
+F 1 "Конденсатор_керамический" H 2100 12550 60  0001 C CNN
+F 2 "N_RLC:Конденсатор_SMD_IEC_0805" H 2000 12650 60  0001 C CNN
+F 3 "" H 2000 12650 60  0001 C CNN
+F 4 "10 мкФ/25 В" V 2100 12550 50  0000 R CNN "Номинал"
+F 5 "С111" H 2000 12650 50  0001 C CNN "УГО"
+F 6 "https://www.chipdip.ru/product/grm188r71e105ka12d" H 2000 12650 50  0001 C CNN "LINK"
+	1    2000 12650
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	2500 12500 2500 12750
+	2000 12750 2000 13000
 Wire Wire Line
-	2500 12750 3650 12750
+	2000 13000 3150 13000
 Wire Wire Line
-	4250 12750 4250 12500
+	4250 13000 4250 12750
 Wire Wire Line
-	3650 12550 3650 12750
+	3150 12800 3150 13000
 Wire Wire Line
-	3250 12250 2500 12250
+	2750 12500 2000 12500
 Wire Wire Line
-	2500 12250 2500 12350
+	2000 12500 2000 12600
 Wire Wire Line
-	4250 12250 4250 12350
-Wire Wire Line
-	2500 12250 2000 12250
-Connection ~ 2500 12250
-Text Label 5250 12750 2    50   ~ 0
+	4250 12500 4250 12600
+Connection ~ 2000 12500
+Text Label 5250 13000 2    50   ~ 0
 GND
-Text Label 5250 12250 2    50   ~ 0
+Text Label 4750 12500 2    50   ~ 0
 3V3
-Text Label 2000 12250 0    50   ~ 0
+Text Label 1000 12500 0    50   ~ 0
 4-LION
 $Comp
 L elements:Резистор_0,065Вт R27
@@ -1269,49 +1267,49 @@ Text Label 3500 10125 2    50   ~ 0
 $Comp
 L ITC-1-rescue:ИОП_LM4040BIM3-2.5_NOPB-MOTOR_2020_import G2
 U 1 1 60B2EC44
-P 2625 14000
-F 0 "G2" H 2875 14173 50  0000 C CNN
-F 1 "ИОП_LM4040BIM3-2.5_NOPB" H 3075 13575 50  0001 C CNN
-F 2 "MOTOR_VD_VT_HL:Корпус_КТ-46" H 2775 14500 50  0001 C CNN
-F 3 "${MOTOR_2020_LIB}\\documentation\\IMPORT\\LM4040.pdf" H 2675 14000 50  0001 C CNN
-F 4 "-" H 2650 14300 50  0001 C CNN "TY"
-F 5 "-" H 2650 14225 50  0001 C CNN "INFO"
-F 6 "https://www.chipdip.ru/product/lm4040bim3-2.5-nopb" H 3000 14400 50  0001 C CNN "LINK"
-	1    2625 14000
+P 3125 15250
+F 0 "G2" H 3375 15423 50  0000 C CNN
+F 1 "ИОП_LM4040BIM3-2.5_NOPB" H 3575 14825 50  0001 C CNN
+F 2 "MOTOR_VD_VT_HL:Корпус_КТ-46" H 3275 15750 50  0001 C CNN
+F 3 "${MOTOR_2020_LIB}\\documentation\\IMPORT\\LM4040.pdf" H 3175 15250 50  0001 C CNN
+F 4 "-" H 3150 15550 50  0001 C CNN "TY"
+F 5 "-" H 3150 15475 50  0001 C CNN "INFO"
+F 6 "https://www.chipdip.ru/product/lm4040bim3-2.5-nopb" H 3500 15650 50  0001 C CNN "LINK"
+	1    3125 15250
 	1    0    0    -1  
 $EndComp
 $Comp
 L elements:Резистор_0,065Вт R32
 U 1 1 60B30779
-P 2500 13450
-F 0 "R32" V 2400 13650 60  0000 C CNN
-F 1 "Резистор_0,065Вт" H 2500 13300 60  0001 C CNN
-F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 2500 13450 60  0001 C CNN
-F 3 "" H 2500 13450 60  0001 C CNN
-F 4 "R101" H 2500 13450 50  0001 C CNN "УГО"
-F 5 "10 кОм" V 2600 13700 50  0000 C CNN "Номинал"
-F 6 "https://www.chipdip.ru/product0/65097" H 2500 13450 50  0001 C CNN "LINK"
-	1    2500 13450
+P 3000 14700
+F 0 "R32" V 2900 14900 60  0000 C CNN
+F 1 "Резистор_0,065Вт" H 3000 14550 60  0001 C CNN
+F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 3000 14700 60  0001 C CNN
+F 3 "" H 3000 14700 60  0001 C CNN
+F 4 "R101" H 3000 14700 50  0001 C CNN "УГО"
+F 5 "10 кОм" V 3100 14950 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 3000 14700 50  0001 C CNN "LINK"
+	1    3000 14700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2500 13750 2500 14000
+	3000 15000 3000 15250
 Wire Wire Line
-	2500 14000 2625 14000
+	3000 15250 3125 15250
 Wire Wire Line
-	2625 14200 2500 14200
+	3125 15450 3000 15450
 Wire Wire Line
-	2500 14200 2500 14500
+	3000 15450 3000 15750
 Wire Wire Line
-	2500 13000 2500 13150
+	3000 14250 3000 14400
 Wire Wire Line
-	2875 13000 2500 13000
+	3375 14250 3000 14250
 Wire Wire Line
-	2500 14500 2875 14500
-Text Label 2875 14500 2    50   ~ 0
+	3000 15750 3375 15750
+Text Label 3375 15750 2    50   ~ 0
 GND
-Connection ~ 2500 14000
-Text Label 2125 14000 0    50   ~ 0
+Connection ~ 3000 15250
+Text Label 2625 15250 0    50   ~ 0
 U-REF
 Entry Wire Line
 	1250 2350 1350 2450
@@ -1351,7 +1349,7 @@ Text Label 1500 8875 0    50   ~ 0
 ADC1-CH6
 Text Label 1500 9500 0    50   ~ 0
 ADC1-CH7
-Text Label 1500 14000 0    50   ~ 0
+Text Label 2000 15250 0    50   ~ 0
 ADC1-CH4
 $Comp
 L elements:Резистор_0,065Вт R33
@@ -1494,7 +1492,7 @@ Entry Wire Line
 Wire Wire Line
 	5450 2150 6400 2150
 Wire Wire Line
-	1500 14000 2500 14000
+	2000 15250 3000 15250
 $Comp
 L elements:Резистор_0,065Вт R41
 U 1 1 60AF21AC
@@ -1509,33 +1507,15 @@ F 6 "https://www.chipdip.ru/product0/65097" H 2425 7600 50  0001 C CNN "LINK"
 	1    2425 7600
 	1    0    0    -1  
 $EndComp
-$Comp
-L elements:Резистор_0,065Вт R42
-U 1 1 60AF21B8
-P 3025 7850
-F 0 "R42" H 3025 8000 60  0000 C CNN
-F 1 "Резистор_0,065Вт" H 3025 7700 60  0001 C CNN
-F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 3025 7850 60  0001 C CNN
-F 3 "" H 3025 7850 60  0001 C CNN
-F 4 "R101" H 3025 7850 50  0001 C CNN "УГО"
-F 5 "10 кОм" H 3025 7700 50  0000 C CNN "Номинал"
-F 6 "https://www.chipdip.ru/product0/65097" H 3025 7850 50  0001 C CNN "LINK"
-	1    3025 7850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1350 7600 2000 7600
 Wire Wire Line
 	2000 7600 2000 7850
-Wire Wire Line
-	2000 7850 2725 7850
 Connection ~ 2000 7600
 Wire Wire Line
 	2000 7600 2125 7600
-Text Label 3500 7850 2    50   ~ 0
+Text Label 3250 7850 2    50   ~ 0
 GND
-Wire Wire Line
-	3325 7850 3500 7850
 Entry Wire Line
 	1250 8150 1350 8250
 Wire Wire Line
@@ -1586,7 +1566,7 @@ Wire Wire Line
 	5450 3800 6400 3800
 Entry Wire Line
 	6400 3800 6500 3900
-Text Label 2875 13000 2    50   ~ 0
+Text Label 3375 14250 2    50   ~ 0
 3V3
 $Comp
 L elements:LOGO D1
@@ -1821,34 +1801,26 @@ Wire Wire Line
 $Comp
 L elements:Конденсатор_керамический C3
 U 1 1 60C6B107
-P 5000 12400
-F 0 "C3" V 4980 12488 60  0000 L CNN
-F 1 "Конденсатор_керамический" H 5100 12300 60  0001 C CNN
-F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 5000 12400 60  0001 C CNN
-F 3 "" H 5000 12400 60  0001 C CNN
-F 4 "10 мкФ/6,3 В" V 5078 12488 50  0000 L CNN "Номинал"
-F 5 "С111" H 5000 12400 50  0001 C CNN "УГО"
-F 6 "https://www.chipdip.ru/product/grm188r60j106me47d" H 5000 12400 50  0001 C CNN "LINK"
-	1    5000 12400
+P 5000 12650
+F 0 "C3" V 4980 12738 60  0000 L CNN
+F 1 "Конденсатор_керамический" H 5100 12550 60  0001 C CNN
+F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 5000 12650 60  0001 C CNN
+F 3 "" H 5000 12650 60  0001 C CNN
+F 4 "10 мкФ/6,3 В" V 5078 12738 50  0000 L CNN "Номинал"
+F 5 "С111" H 5000 12650 50  0001 C CNN "УГО"
+F 6 "https://www.chipdip.ru/product/grm188r60j106me47d" H 5000 12650 50  0001 C CNN "LINK"
+	1    5000 12650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5000 12500 5000 12750
+	5000 12750 5000 13000
+Connection ~ 5000 13000
 Wire Wire Line
-	5000 12750 4250 12750
-Connection ~ 5000 12750
-Wire Wire Line
-	5000 12350 5000 12250
-Wire Wire Line
-	5000 12250 4250 12250
-Connection ~ 5000 12250
-Wire Wire Line
-	4050 12250 4250 12250
-Connection ~ 4250 12250
-Wire Wire Line
-	4250 12750 3650 12750
-Connection ~ 4250 12750
-Connection ~ 3650 12750
+	5000 12600 5000 12500
+Connection ~ 5000 12500
+Connection ~ 4250 12500
+Connection ~ 4250 13000
+Connection ~ 3150 13000
 $Comp
 L elements:Конденсатор_керамический C4
 U 1 1 60D5EB05
@@ -2080,25 +2052,106 @@ Wire Wire Line
 $Comp
 L elements:Конденсатор_керамический C7
 U 1 1 61C53F9E
-P 5750 12400
-F 0 "C7" V 5730 12488 60  0000 L CNN
-F 1 "Конденсатор_керамический" H 5850 12300 60  0001 C CNN
-F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 5750 12400 60  0001 C CNN
-F 3 "" H 5750 12400 60  0001 C CNN
-F 4 "10 мкФ/6,3 В" V 5828 12488 50  0000 L CNN "Номинал"
-F 5 "С111" H 5750 12400 50  0001 C CNN "УГО"
-F 6 "https://www.chipdip.ru/product/grm188r60j106me47d" H 5750 12400 50  0001 C CNN "LINK"
-	1    5750 12400
+P 5750 12650
+F 0 "C7" V 5730 12738 60  0000 L CNN
+F 1 "Конденсатор_керамический" H 5850 12550 60  0001 C CNN
+F 2 "N_RLC:Конденсатор_SMD_0603_pnp" H 5750 12650 60  0001 C CNN
+F 3 "" H 5750 12650 60  0001 C CNN
+F 4 "10 мкФ/6,3 В" V 5828 12738 50  0000 L CNN "Номинал"
+F 5 "С111" H 5750 12650 50  0001 C CNN "УГО"
+F 6 "https://www.chipdip.ru/product/grm188r60j106me47d" H 5750 12650 50  0001 C CNN "LINK"
+	1    5750 12650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5750 12500 5750 12750
+	5750 12750 5750 13000
 Wire Wire Line
-	5750 12350 5750 12250
+	5750 12600 5750 12500
 Wire Wire Line
-	5000 12250 5750 12250
+	4250 13000 5000 13000
 Wire Wire Line
-	5000 12750 5750 12750
+	4250 12500 5000 12500
+Wire Wire Line
+	3150 13000 4250 13000
+Wire Wire Line
+	3550 12500 3750 12500
+Wire Wire Line
+	5000 12500 5750 12500
+Wire Wire Line
+	5000 13000 5750 13000
+Wire Wire Line
+	3550 12700 3750 12700
+Wire Wire Line
+	3750 12700 3750 12500
+Connection ~ 3750 12500
+Wire Wire Line
+	3750 12500 4250 12500
+$Comp
+L elements_2020:Стабилитрон_1N5352BRLG_вертикальный VD2
+U 1 1 61332A43
+P 3050 7850
+F 0 "VD2" H 3200 7750 39  0000 C CNN
+F 1 "Стабилитрон_1N5352BRLG_вертикальный" H 3225 7625 39  0001 C CNN
+F 2 "N_VD_HL:SOD-80" H 3200 7525 39  0001 C CNN
+F 3 "https://static.chipdip.ru/lib/773/DOC002773472.pdf" H 2950 7850 39  0001 C CNN
+F 4 "2,7 В" H 3200 8000 39  0000 C CNN "INFO"
+F 5 "https://www.chipdip.ru/product/1n5352brlg-2" H 3200 7425 50  0001 C CNN "LINK"
+	1    3050 7850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3050 7850 3250 7850
+Wire Wire Line
+	2000 7850 2750 7850
+$Comp
+L elements_2020:Стабилитрон_1N5352BRLG_вертикальный VD3
+U 1 1 613B2826
+P 1500 13900
+F 0 "VD3" V 1750 13750 39  0000 C CNN
+F 1 "Стабилитрон_1N5352BRLG_вертикальный" H 1675 13675 39  0001 C CNN
+F 2 "N_VD_HL:SOD-80" H 1650 13575 39  0001 C CNN
+F 3 "https://static.chipdip.ru/lib/773/DOC002773472.pdf" H 1400 13900 39  0001 C CNN
+F 4 "18 В" V 1600 13750 39  0000 C CNN "INFO"
+F 5 "https://www.chipdip.ru/product/1n5352brlg-2" H 1650 13475 50  0001 C CNN "LINK"
+	1    1500 13900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L elements:Резистор_0,065Вт R31
+U 1 1 615173D2
+P 1500 13050
+F 0 "R31" V 1450 13250 60  0000 C CNN
+F 1 "Резистор_0,065Вт" H 1500 12900 60  0001 C CNN
+F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 1500 13050 60  0001 C CNN
+F 3 "" H 1500 13050 60  0001 C CNN
+F 4 "R101" H 1500 13050 50  0001 C CNN "УГО"
+F 5 "39 Ом" V 1550 13300 50  0000 C CNN "Номинал"
+F 6 "https://www.chipdip.ru/product0/65097" H 1500 13050 50  0001 C CNN "LINK"
+	1    1500 13050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1000 12500 1500 12500
+Wire Wire Line
+	1500 13900 1500 14000
+Wire Wire Line
+	1500 14000 2000 14000
+Wire Wire Line
+	2000 14000 2000 13000
+Connection ~ 2000 13000
+Wire Wire Line
+	1500 12750 1500 12500
+Connection ~ 1500 12500
+Wire Wire Line
+	1500 12500 2000 12500
+Wire Wire Line
+	1500 13350 1500 13600
+Wire Wire Line
+	4250 1000 4250 1250
+Text Label 4250 1250 2    50   ~ 0
+GND
+Wire Wire Line
+	3750 1000 3750 1250
 Wire Bus Line
 	14500 1500 14500 4750
 Wire Bus Line
@@ -2106,5 +2159,7 @@ Wire Bus Line
 Wire Bus Line
 	6500 1500 6500 15000
 Wire Bus Line
-	1250 1500 1250 11750
+	1250 1500 1250 11650
+Text Label 3750 1250 2    50   ~ 0
+MOTOR-GND
 $EndSCHEMATC
