@@ -20,7 +20,7 @@ U 1 1 609973EE
 P 2200 2000
 F 0 "A1" H 3725 2265 50  0000 C CNN
 F 1 "модуль_esp32_wroom_32_SMD" H 3725 2174 50  0000 C CNN
-F 2 "N_A:ESP32_WROOM32_pnp" H 2200 2000 50  0001 C CNN
+F 2 "N_A:ESP32_WROOM32_pnp_noSD" H 2200 2000 50  0001 C CNN
 F 3 "" H 2200 2000 50  0001 C CNN
 F 4 "не заказывал, есть в наличии" H 2200 2000 50  0001 C CNN "LINK"
 	1    2200 2000
@@ -97,10 +97,6 @@ Wire Wire Line
 	5450 3950 6400 3950
 Entry Wire Line
 	6400 3950 6500 4050
-Entry Wire Line
-	1250 3100 1350 3200
-Wire Wire Line
-	1350 3200 2000 3200
 Text Label 1500 3500 0    50   ~ 0
 LED_2
 Entry Wire Line
@@ -2117,10 +2113,10 @@ F 5 "https://www.chipdip.ru/product/1n5352brlg-2" H 1650 13475 50  0001 C CNN "L
 	0    -1   -1   0   
 $EndComp
 $Comp
-L elements:Резистор_0,065Вт R?
+L elements:Резистор_0,065Вт R31
 U 1 1 615173D2
 P 1500 13050
-F 0 "R?" V 1450 13250 60  0000 C CNN
+F 0 "R31" V 1450 13250 60  0000 C CNN
 F 1 "Резистор_0,065Вт" H 1500 12900 60  0001 C CNN
 F 2 "N_RLC:Резистор_SMD_0603_0,065_Вт_pnp" H 1500 13050 60  0001 C CNN
 F 3 "" H 1500 13050 60  0001 C CNN
@@ -2146,6 +2142,14 @@ Wire Wire Line
 	1500 12500 2000 12500
 Wire Wire Line
 	1500 13350 1500 13600
+Wire Wire Line
+	4250 1000 4250 1250
+Text Label 4250 1250 2    50   ~ 0
+GND
+Wire Wire Line
+	3750 1000 3750 1250
+Text Label 3750 1250 2    50   ~ 0
+MOTOR-GND
 Wire Bus Line
 	14500 1500 14500 4750
 Wire Bus Line

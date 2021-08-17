@@ -15,12 +15,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L modules:модуль_esp32_wroom_32_SMD A1
+L modules:модуль_esp32_wroom_32_SMD_noSD A1
 U 1 1 609973EE
 P 2200 2000
 F 0 "A1" H 3725 2265 50  0000 C CNN
 F 1 "модуль_esp32_wroom_32_SMD" H 3725 2174 50  0000 C CNN
-F 2 "N_A:ESP32_WROOM32_pnp" H 2200 2000 50  0001 C CNN
+F 2 "N_A:ESP32_WROOM32_pnp_noSD" H 2200 2000 50  0001 C CNN
 F 3 "" H 2200 2000 50  0001 C CNN
 F 4 "не заказывал, есть в наличии" H 2200 2000 50  0001 C CNN "LINK"
 	1    2200 2000
@@ -76,9 +76,6 @@ F 4 "pcb element" H 3000 1000 50  0001 C CNN "LINK"
 $EndComp
 Text Label 1500 3350 0    50   ~ 0
 LED_1
-NoConn ~ 2000 3950
-NoConn ~ 3250 4250
-NoConn ~ 3400 4250
 Text Label 6250 2450 2    50   ~ 0
 BOOT_UART_TX
 Wire Wire Line
@@ -97,10 +94,6 @@ Wire Wire Line
 	5450 3950 6400 3950
 Entry Wire Line
 	6400 3950 6500 4050
-Entry Wire Line
-	1250 3100 1350 3200
-Wire Wire Line
-	1350 3200 2000 3200
 Text Label 1500 3500 0    50   ~ 0
 LED_2
 Entry Wire Line
@@ -2152,6 +2145,8 @@ Text Label 4250 1250 2    50   ~ 0
 GND
 Wire Wire Line
 	3750 1000 3750 1250
+Text Label 3750 1250 2    50   ~ 0
+MOTOR-GND
 Wire Bus Line
 	14500 1500 14500 4750
 Wire Bus Line
@@ -2160,6 +2155,4 @@ Wire Bus Line
 	6500 1500 6500 15000
 Wire Bus Line
 	1250 1500 1250 11650
-Text Label 3750 1250 2    50   ~ 0
-MOTOR-GND
 $EndSCHEMATC

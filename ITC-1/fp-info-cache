@@ -1,225 +1,134 @@
-50672188249570
-N_VD_HL
-display_EDS803_805
+29819763573238
+N_A
+Arduino_Ethernet_shield
+
+
+0
+24
+24
+N_A
+Arduino_mega_2560
+
+
+0
+86
+86
+N_A
+Arduino_nano
+
+
+0
+30
+30
+N_A
+ESP32-module
+
+
+0
+30
+30
+N_A
+ESP32_WROOM32_pnp
+
+
+0
+47
+39
+N_A
+ESP32_WROOM32_pnp_noSD
 
 
 0
 40
-40
-N_VD_HL
-Fuse_1812
-Fuse SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://www.nikhef.nl/pub/departments/mt/projects/detectorR_D/dtddice/ERJ2G.pdf), generated with kicad-footprint-generator
-resistor handsolder
-0
-2
-2
-N_VD_HL
-IGBT_dpak
+32
+N_A
+ESP32_WROVER
 
 
 0
-3
-3
-N_VD_HL
-LED_D3.0mm
-LED, diameter 3.0mm, 2 pins
-LED diameter 3.0mm 2 pins
-0
-2
-2
-N_VD_HL
-oled_0.91_128x32
+47
+39
+N_A
+ESP32_WROVER_or_WROOM32
 
 
 0
-4
-4
-N_VD_HL
-SOD-80
+57
+39
+N_A
+ESP32_WROVER_or_WROOM32_pnp
 
 
 0
-2
-2
-N_VD_HL
-TFT_2.8_INCH
+57
+39
+N_A
+ESP_wroom_32
 
 
 0
-18
-15
-N_VD_HL
-Диод_BAR43CFILM_SOT-23
-SOT-23, Single Diode
-SOT-23
+47
+39
+N_A
+Paspberry_PI_3
+
+
 0
-3
-2
-N_VD_HL
-Диод_S13_SOD-123
-SOT-23, Single Diode
-SOT-23
+44
+41
+N_A
+модуль_kaa_с_raspberry
+
+
 0
-2
-2
-N_VD_HL
-Диод_SMB
-SOT-23, Single Diode
-SOT-23
 0
-2
-2
-N_VD_HL
-Диод_SMB_pnp
-SOT-23, Single Diode
-SOT-23
 0
-2
-2
-N_VD_HL
-Диод_матрица_корпус_DB-1S
-SOT-23, Single Diode
-SOT-23
-0
-4
-4
-N_VD_HL
-ЖК_MT-16S2H
+N_A
+модуль_mae_30x30_SMD
 
 
 0
 20
-17
-N_VD_HL
-ЖК_MT-16S2H_2DRL
+20
+N_A
+Модуль_акселерометра_mpu-9250(вертикальный)
 
 
 0
-18
-17
-N_VD_HL
-Зуммер_HPA17F
+10
+10
+N_A
+Модуль_ЛОС_CCS811(вертикальный)
 
 
 0
-2
-2
-N_VD_HL
-корпус_kd-3a
-
-
-0
-2
-2
-N_VD_HL
-Корпус_КТ-46
-SOT-23
-SOT-23
-0
-3
-3
-N_VD_HL
-Светодиод_SMD_IEC_0603
-
-
-0
-2
-2
-N_VD_HL
-Светодиод_SMD_m3025
+8
+8
+N_A
+Модуль_температуры_DHT22
 
 
 0
 4
 4
-N_VD_HL
-Светодиод_SMD_neopixel_ws2812b
+N_A
+Панель_светодиодов_3_LED
 
 
 0
-4
-4
-N_VD_HL
-стабилитрон_DO-201_вертикальный
-LED, diameter 3.0mm, 2 pins
-LED diameter 3.0mm 2 pins
-0
-2
-2
-N_VD_HL
-Стабилитрон_корпус_КД-2_в_отверстие
+6
+6
+N_A
+Панель_сенсорная_uad0_2
 
 
 0
-2
-2
-N_VD_HL
-Транзистор_IRLML6344TR_SOT-23
-SOT-23, Single Diode
-SOT-23
-0
-3
-3
-N_VD_HL
-Транзистор_N-канал_dpak
+15
+15
+N_A
+Повышающий_DCDC_3pin_10x12mm
 
 
 0
 3
 3
-N_VD_HL
-Транзистор_N-канал_dpak_DS
-
-
-0
-3
-3
-N_VD_HL
-Транзистор_NPN_SOT223
-
-
-0
-4
-4
-N_VD_HL
-Транзистор_NPN_SOT223_pnp
-
-
-0
-4
-4
-N_VD_HL
-Транзистор_NPN_ТО-220
-
-
-0
-4
-4
-N_VD_HL
-Транзистор_N_STP10NK60Z
-
-
-0
-3
-3
-N_VD_HL
-Транзистор_P_IRF9Z24NPBF
-
-
-0
-3
-3
-N_VD_HL
-Транзистор_TO-220_COOLING
-
-
-0
-3
-3
-N_VD_HL
-фототранзистор-vt-900
-
-
-0
-2
-2
