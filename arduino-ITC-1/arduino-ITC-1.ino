@@ -1,18 +1,18 @@
 
 #define LED_RED     13
 #define LED_GREEN   15
-#define LED_1       25
-#define LED_2       26
-#define LED_3       27
-#define LED_4       14
+#define LED_9       25
+#define LED_8       26
+#define LED_7       27
+#define LED_6       14
 #define LED_5       2
-#define LED_6       4
-#define LED_7       16
-#define LED_8       17
-#define LED_9       5
+#define LED_4       4
+#define LED_3       16
+#define LED_2       17
+#define LED_1       5
 #define DRIVE       23
-#define BTN_L       19
-#define BTN_R       18
+#define BTN_R       19
+#define BTN_L       18
 
 #define UREF        32
 #define LION1       34
@@ -20,8 +20,11 @@
 #define LION3       39
 #define LION4       36
 
+#define CHRGE_SENS  21
+
 boolean b_BTN_L = false;
 boolean b_BTN_R = false;
+boolean b_CHARGE = false;
 boolean b_BTN_L_lock = false;
 boolean b_BTN_R_lock = false;
 
@@ -49,7 +52,12 @@ float f_aref = 0,
       f_lion3 = 0,
       f_lion4 = 0,
       f_min_U = 3.2,
-      f_max_U = 3.8;
+      f_max_U = 3.8,
+      f_charge_li1 = 0,
+      f_charge_li2 = 0,
+      f_charge_li3 = 0,
+      f_charge_li4 = 0,
+      f_min_charge = 0;
       
 float f_analog_koef = 0,  // Bird for Volt
       f_lion1_koef = 2.0,
@@ -69,6 +77,8 @@ void setup() {
   
   delay(100);
 
+  adc_read();
+
   blink_pin( LED_1 );
   blink_pin( LED_2 );
   blink_pin( LED_3 );
@@ -83,7 +93,7 @@ void setup() {
   ledcAttachPin( DRIVE, int_pwm_channel );
   ledcWrite( int_pwm_channel, 0 );
 
-  int_battery = 5; // for test only
+  int_battery = round( 9*f_min_charge/100 );
 
   while ( (millis()) < int_time_to_view_battery )  {
     display_battery();
@@ -105,10 +115,22 @@ void loop() {
 
   int_battery = 9 - int_speed;    // for test only
 
-  if ( ( (digitalRead(BTN_L)) == LOW ) & ( (digitalRead(BTN_R)) == LOW ) )  {
+  if ( ( ( (digitalRead(BTN_L)) == LOW ) & ( (digitalRead(BTN_R)) == LOW ) )||(b_CHARGE == true) )  {
     display_battery();
   } else {
-    display_speed();
+    //  
+    if (b_engine_start == true) { // если двигатель запущен - индикатор скорости горит непрерывно, 
+      display_speed();
+    } else {                      // если двигетель НЕ запущен - индикатор скорости моргает
+      blink_speed_display(500);
+    }
+    //
+  }
+
+  if (b_CHARGE == true) { // stop engine if charge
+    b_engine_start = false;
+    ulong_time_millis = millis();
+    int_speed = 0;
   }
 
   if (b_engine_start == true) {
@@ -117,7 +139,7 @@ void loop() {
     ledcWrite( int_pwm_channel, 0 );
   }
   
-  if (( millis() - ulong_time_millis ) > int_time_to_start) {
+  if ( ( millis() - ulong_time_millis ) > int_time_to_start )  {
     b_engine_start = true;
   }
 
@@ -141,22 +163,37 @@ void send_logs()  {
   Serial.print("BTN_R: ");
   Serial.println( b_BTN_R );
   
-/*
-  Serial.print("BTN_count: ");
-  Serial.println( int_btn_L_count );
-  Serial.println( int_btn_R_count );
-*/
   Serial.print("LI-1: ");
-  Serial.println( f_lion1 );
+  Serial.print( f_lion1 );
+  Serial.print("; ");
+  Serial.println( f_charge_li1 );
+  
   Serial.print("LI-2: ");
-  Serial.println( f_lion2 );
+  Serial.print( f_lion2 );
+  Serial.print("; ");
+  Serial.println( f_charge_li2 );
+  
   Serial.print("LI-3: ");
-  Serial.println( f_lion3 );
+  Serial.print( f_lion3 );
+  Serial.print("; ");
+  Serial.println( f_charge_li3 );
+  
   Serial.print("LI-4: ");
-  Serial.println( f_lion4 );
+  Serial.print( f_lion4 );
+  Serial.print("; ");
+  Serial.println( f_charge_li4 );
 
+  Serial.print("MIN CHARGE: ");
+  Serial.println( f_min_charge );
+  
   Serial.print("SPEED: ");
   Serial.println( int_speed );
+
+  Serial.print("ENGINE: ");
+  Serial.println(b_engine_start);
+
+  Serial.print("CHARGE: ");
+  Serial.println(b_CHARGE);
   
   Serial.println();
 }
@@ -174,7 +211,17 @@ void adc_read() {
   f_lion4 = f_lion4 - f_lion3;
   f_lion3 = f_lion3 - f_lion2;
   f_lion2 = f_lion2 - f_lion1;
-  
+
+  f_charge_li1 = calc_charge( f_lion1, f_min_U, f_max_U );
+  f_charge_li2 = calc_charge( f_lion2, f_min_U, f_max_U );
+  f_charge_li3 = calc_charge( f_lion3, f_min_U, f_max_U );
+  f_charge_li4 = calc_charge( f_lion4, f_min_U, f_max_U );
+
+  f_min_charge = 100;
+  if ( f_charge_li1 < f_min_charge )  {f_min_charge = f_charge_li1; }
+  if ( f_charge_li2 < f_min_charge )  {f_min_charge = f_charge_li2; }
+  if ( f_charge_li3 < f_min_charge )  {f_min_charge = f_charge_li3; }
+  if ( f_charge_li4 < f_min_charge )  {f_min_charge = f_charge_li4; }
 }
 
 void speed_change() {
@@ -226,6 +273,12 @@ void read_BTN() {
     b_BTN_R = false;
     b_BTN_R_lock = false;
     int_btn_R_count = 0;
+  }
+
+  if ( (digitalRead(CHRGE_SENS)) == HIGH )  {
+    b_CHARGE = true;
+  } else {
+    b_CHARGE = false;
   }
 }
 
@@ -322,6 +375,13 @@ void init_pins()  {
   pinMode( BTN_L, INPUT_PULLUP );
 
   pinMode( BTN_R, INPUT_PULLUP );
+
+  pinMode( CHRGE_SENS, INPUT_PULLDOWN );
+}
+
+void turn_off_all_led() {
+  digitalWrite( LED_RED, HIGH );
+  digitalWrite( LED_GREEN, HIGH );
 }
 
 
@@ -569,4 +629,23 @@ void display_battery()  {
       turn_off( LED_8 );
       turn_off( LED_9 );
   }
+}
+
+void blink_speed_display(int period)  {
+  if ( ((millis())%period)>round(period/2) ) {
+      display_speed();
+    } else {
+      turn_off_all_led();
+    }
+}
+
+float calc_charge(float U_in, float min_U, float max_U)  {
+  float charge_output = 0;
+  
+  charge_output = 100*(U_in - min_U)/(max_U - min_U);
+
+  if (charge_output < 0)  {charge_output = 0;}
+  if (charge_output>100)  {charge_output = 100;} 
+  
+  return charge_output;
 }
