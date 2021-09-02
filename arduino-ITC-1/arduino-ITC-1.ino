@@ -67,7 +67,7 @@ float f_analog_koef = 0,  // Bird for Volt
       
 float f_2v5 = 2.5;
 
-int int_pwm_freq = 50,
+int int_pwm_freq = 80,
     int_pwm_resolution = 6,
     int_pwm_channel = 0,
     int_pwm_koef = 7;
@@ -96,7 +96,15 @@ void setup() {
   int_battery = round( 9*f_min_charge/100 );
 
   while ( (millis()) < int_time_to_view_battery )  {
-    display_battery();
+    if (int_battery>=1) {
+      display_battery();
+    } else {
+      turn_on_green( LED_2 );
+      turn_on_green( LED_4 );
+      turn_on_green( LED_6 );
+      turn_on_green( LED_8 );
+    }
+    
   }
   
   Serial.begin(115200);
@@ -113,10 +121,16 @@ void loop() {
 
   adc_read();
 
-  int_battery = 9 - int_speed;    // for test only
+  //int_battery = 9 - int_speed;    // for test only
 
   if ( ( ( (digitalRead(BTN_L)) == LOW ) & ( (digitalRead(BTN_R)) == LOW ) )||(b_CHARGE == true) )  {
-    display_battery();
+    //
+    if (int_battery<2)  { 
+      blink_battery_display(100, 2000); 
+    } else { 
+      display_battery(); 
+    }
+    //
   } else {
     //  
     if (b_engine_start == true) { // если двигатель запущен - индикатор скорости горит непрерывно, 
@@ -631,11 +645,31 @@ void display_battery()  {
   }
 }
 
+void turn_on_all_green()  {
+  turn_on_green( LED_1 );
+  turn_on_green( LED_2 );
+  turn_on_green( LED_3 );
+  turn_on_green( LED_4 );
+  turn_on_green( LED_5 );
+  turn_on_green( LED_6 );
+  turn_on_green( LED_7 );
+  turn_on_green( LED_8 );
+  turn_on_green( LED_9 );
+}
+
 void blink_speed_display(int period)  {
   if ( ((millis())%period)>round(period/2) ) {
       display_speed();
     } else {
       turn_off_all_led();
+    }
+}
+
+void blink_battery_display(int fill, int period)  {
+  if ( ((millis())%period)>round(fill) ) {
+      display_battery();
+    } else {
+      turn_on_all_green();
     }
 }
 
