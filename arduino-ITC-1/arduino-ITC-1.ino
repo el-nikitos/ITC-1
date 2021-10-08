@@ -67,7 +67,7 @@ float f_analog_koef = 0,  // Bird for Volt
       
 float f_2v5 = 2.5;
 
-int int_pwm_freq = 150, //было 80
+int int_pwm_freq = 200, //было 80
     int_pwm_resolution = 6,
     int_pwm_channel = 0,
     int_pwm_koef = 7;
@@ -97,7 +97,7 @@ void setup() {
 
   while ( (millis()) < int_time_to_view_battery )  {
     if (int_battery>=1) {
-      display_battery();
+      display_battery( int_battery );
     } else {
       turn_on_green( LED_2 );
       turn_on_green( LED_4 );
@@ -119,7 +119,8 @@ void loop() {
   speed_change();
 
   adc_read();
-
+  int_battery = round( 9*f_min_charge/100 );
+  
   //int_battery = 9 - int_speed;    // for test only
 
   if ( ( ( (digitalRead(BTN_L)) == LOW ) & ( (digitalRead(BTN_R)) == LOW ) )||(b_CHARGE == true) )  {
@@ -521,8 +522,8 @@ void display_speed()  {
   }
 }
 
-void display_battery()  {
-  switch ( int_battery ) {
+void display_battery(int int_bat_display)  {
+  switch ( int_bat_display ) {
     case 1:
       turn_on_green( LED_1 );
       turn_off( LED_2 );
@@ -665,10 +666,10 @@ void blink_speed_display(int period)  {
 }
 
 void blink_battery_display(int fill, int period)  {
-  if ( ((millis())%period)>round(fill) ) {
-      display_battery();
+  if ( ((millis())%period)<round(fill) ) {
+      display_battery( int_battery );
     } else {
-      turn_on_all_green();
+      display_battery( int_battery + 1 );
     }
 }
 
@@ -677,8 +678,8 @@ float calc_charge(float U_in, float min_U, float max_U)  {
   
   charge_output = 100*(U_in - min_U)/(max_U - min_U);
 
-  if (charge_output < 0)  {charge_output = 0;}
-  if (charge_output>100)  {charge_output = 100;} 
+  if (charge_output < 0)    {charge_output = 0;}
+  if (charge_output > 100)  {charge_output = 100;} 
   
   return charge_output;
 }
