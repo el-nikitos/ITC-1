@@ -42,7 +42,7 @@ unsigned long   ulong_time_millis = 0,
 boolean         b_time_trigger = false;
 
 int int_time_to_start = 3000,
-    int_time_to_stop = 30000,
+    int_time_to_stop = 60000,
     int_time_to_send_log = 2000,
     int_time_to_view_battery = 5000;
 
@@ -67,7 +67,7 @@ float f_analog_koef = 0,  // Bird for Volt
       
 float f_2v5 = 2.5;
 
-int int_pwm_freq = 80,
+int int_pwm_freq = 150, //было 80
     int_pwm_resolution = 6,
     int_pwm_channel = 0,
     int_pwm_koef = 7;
@@ -104,7 +104,6 @@ void setup() {
       turn_on_green( LED_6 );
       turn_on_green( LED_8 );
     }
-    
   }
   
   Serial.begin(115200);
@@ -125,11 +124,11 @@ void loop() {
 
   if ( ( ( (digitalRead(BTN_L)) == LOW ) & ( (digitalRead(BTN_R)) == LOW ) )||(b_CHARGE == true) )  {
     //
-    if (int_battery<2)  { 
-      blink_battery_display(100, 2000); 
-    } else { 
-      display_battery(); 
-    }
+    //if (int_battery<2)  { 
+      blink_battery_display(500, 1000); 
+    //} else { 
+    //  display_battery(); 
+    //}
     //
   } else {
     //  
