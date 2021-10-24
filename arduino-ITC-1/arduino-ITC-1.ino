@@ -1,3 +1,6 @@
+#include <WiFi.h>
+#include <WiFiClient.h>
+#include <WiFiAP.h>
 
 #define LED_RED     13
 #define LED_GREEN   15
@@ -67,12 +70,33 @@ float f_analog_koef = 0,  // Bird for Volt
       
 float f_2v5 = 2.5;
 
-int int_pwm_freq = 200, //было 80
+int int_pwm_freq = 100, //было 80
     int_pwm_resolution = 6,
     int_pwm_channel = 0,
     int_pwm_koef = 7;
 
+const char *ssid = "qwake-new";
+const char *password = "qwake888";
+
+IPAddress local_IP(192, 168, 1, 22);
+IPAddress gateway(192, 168, 1, 1);
+IPAddress subnet(255, 255, 0, 0);
+
+WiFiServer server(80);
+IPAddress myIP;
+
+WiFiClient client;
+int int_wifi_connect_numbers = 0;
+
 void setup() {
+  /*
+  WiFi.softAP(ssid);
+  IPAddress myIP = WiFi.softAPIP();
+  Serial.print("AP IP address: ");
+  Serial.println(myIP);
+  server.begin();
+  Serial.println("Server started");
+  */
   init_pins();
   
   delay(100);
@@ -109,11 +133,17 @@ void setup() {
   Serial.begin(115200);
   Serial.println("ITC-1-0N6, Start!");
 
+  init_wifi();
+
   ulong_time_millis = millis();
   ulong_time_log_millis = millis();
 }
 
 void loop() {
+  client = server.available();
+  int_wifi_connect_numbers = WiFi.softAPgetStationNum();
+  client_read();
+  
   //time_counter();
   read_BTN();
   speed_change();
@@ -208,6 +238,12 @@ void send_logs()  {
 
   Serial.print("CHARGE: ");
   Serial.println(b_CHARGE);
+
+  Serial.print("IP: ");
+  Serial.println( myIP );
+
+  Serial.print("CONNECTION_NUMBER: ");
+  Serial.println( int_wifi_connect_numbers );
   
   Serial.println();
 }
@@ -682,4 +718,8 @@ float calc_charge(float U_in, float min_U, float max_U)  {
   if (charge_output > 100)  {charge_output = 100;} 
   
   return charge_output;
+}
+
+void work_without_connect()  {
+
 }
