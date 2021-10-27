@@ -75,6 +75,9 @@ int int_pwm_freq = 100, //было 80
     int_pwm_channel = 0,
     int_pwm_koef = 7;
 
+String s_input_buf = "",
+       s_input = "turn on";
+
 const char *ssid = "qwake-new";
 const char *password = "qwake888";
 
@@ -182,9 +185,22 @@ void loop() {
   } else {
     ledcWrite( int_pwm_channel, 0 );
   }
-  
-  if ( ( millis() - ulong_time_millis ) > int_time_to_start )  {
-    b_engine_start = true;
+
+  if (int_wifi_connect_numbers <= 0)  {
+    if ( ( millis() - ulong_time_millis ) > int_time_to_start )  {
+      b_engine_start = true;
+    }
+  } else {
+    if ( s_input == "start" ) {
+      //b_engine_start = true;
+      s_input = "work";
+    }
+    if ( s_input == "stop" )  {
+      //b_engine_start = false;
+      //ulong_time_millis = millis();
+      //int_speed = 0;
+      s_input = "stoped";
+    }
   }
 
   if ( ( millis() - ulong_time_millis ) > (int_time_to_start+int_time_to_stop) ) {
@@ -244,6 +260,9 @@ void send_logs()  {
 
   Serial.print("CONNECTION_NUMBER: ");
   Serial.println( int_wifi_connect_numbers );
+
+  Serial.print("RX COMMAND: ");
+  Serial.println( s_input );
   
   Serial.println();
 }
