@@ -23,7 +23,11 @@ void wifi_word_read() {
       s_input_buf = s_input_buf + incomingByte;
     } else {
       //Serial.println( s_input_buf );
-      s_input = s_input_buf;
+      s_input = "";
+      for (int i=0; i<(s_input_buf.length() - 1); i++)  {
+        s_input = s_input + s_input_buf[i];
+      }
+      //s_input = s_input_buf;
       s_input_buf = "";
     }
   }

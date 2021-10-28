@@ -192,13 +192,13 @@ void loop() {
     }
   } else {
     if ( s_input == "start" ) {
-      //b_engine_start = true;
+      b_engine_start = true;
       s_input = "work";
     }
     if ( s_input == "stop" )  {
-      //b_engine_start = false;
-      //ulong_time_millis = millis();
-      //int_speed = 0;
+      b_engine_start = false;
+      ulong_time_millis = millis();
+      int_speed = 0;
       s_input = "stoped";
     }
   }
@@ -262,7 +262,7 @@ void send_logs()  {
   Serial.println( int_wifi_connect_numbers );
 
   Serial.print("RX COMMAND: ");
-  Serial.println( s_input );
+  Serial.println( s_input + "/" + s_input.length() );
   
   Serial.println();
 }
