@@ -70,7 +70,7 @@ float f_analog_koef = 0,  // Bird for Volt
       
 float f_2v5 = 2.5;
 
-int int_pwm_freq = 100, //было 80
+int int_pwm_freq = 80, //было 80
     int_pwm_resolution = 6,
     int_pwm_channel = 0,
     int_pwm_koef = 7;
@@ -81,7 +81,7 @@ String s_input_buf = "",
 const char *ssid = "qwake-new";
 const char *password = "qwake888";
 
-IPAddress local_IP(192, 168, 1, 22);
+IPAddress local_IP(192, 168, 1, 20);
 IPAddress gateway(192, 168, 1, 1);
 IPAddress subnet(255, 255, 0, 0);
 
@@ -200,6 +200,16 @@ void loop() {
       ulong_time_millis = millis();
       int_speed = 0;
       s_input = "stoped";
+    }
+    if ( s_input == "up" )  {
+      int_speed++;
+      ulong_time_millis = millis();
+      s_input = "speed+1";
+    }
+    if ( s_input == "down" )  {
+      int_speed--;
+      ulong_time_millis = millis();
+      s_input = "speed-1";
     }
   }
 
