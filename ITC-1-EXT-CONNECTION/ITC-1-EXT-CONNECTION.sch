@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:ITC-1-EXT-CONNECTION-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
@@ -14,23 +13,23 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 2000 5500 0    138  ~ 28
+Text Label 3250 5500 2    138  ~ 0
 CHARGE-SENS
-Text Label 2000 6000 0    138  ~ 28
+Text Label 3250 6100 2    138  ~ 0
 1.MOTOR-GND
-Text Label 2000 6500 0    138  ~ 28
+Text Label 3250 6400 2    138  ~ 0
 2.MOTOR-GND
-Text Label 7000 5000 2    138  ~ 28
+Text Label 7000 5500 2    138  ~ 0
 LI-1
-Text Label 7000 5500 2    138  ~ 28
+Text Label 7000 5800 2    138  ~ 0
 LI-2
-Text Label 7000 6000 2    138  ~ 28
+Text Label 7000 6100 2    138  ~ 0
 LI-3
-Text Label 7000 6500 2    138  ~ 28
+Text Label 7000 6400 2    138  ~ 0
 LI-4
-Text Label 7000 7000 2    138  ~ 28
+Text Label 7000 6700 2    138  ~ 0
 1.0V
-Text Label 7000 7500 2    138  ~ 28
+Text Label 7000 7000 2    138  ~ 0
 2.0V
 Text Label 8000 9000 0    138  ~ 28
 LI-2
@@ -69,15 +68,15 @@ Wire Wire Line
 Entry Wire Line
 	1500 5600 1600 5500
 Entry Wire Line
-	1500 6100 1600 6000
+	1500 6200 1600 6100
 Entry Wire Line
-	1500 6600 1600 6500
+	1500 6500 1600 6400
 Wire Wire Line
-	1600 5500 4000 5500
+	1600 5500 3500 5500
 Wire Wire Line
-	1600 6000 4000 6000
+	1600 6100 3500 6100
 Wire Wire Line
-	1600 6500 4000 6500
+	1600 6400 3500 6400
 $Comp
 L BIG_schemes:Аккумулятор GB4
 U 1 1 60DA177A
@@ -123,17 +122,17 @@ F 3 "" H 12500 9550 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Entry Wire Line
-	7400 5000 7500 5100
-Entry Wire Line
 	7400 5500 7500 5600
 Entry Wire Line
-	7500 6100 7400 6000
+	7400 5800 7500 5900
 Entry Wire Line
-	7500 6600 7400 6500
+	7500 6200 7400 6100
+Entry Wire Line
+	7500 6500 7400 6400
+Entry Wire Line
+	7400 6700 7500 6800
 Entry Wire Line
 	7400 7000 7500 7100
-Entry Wire Line
-	7400 7500 7500 7600
 Wire Wire Line
 	9500 2500 7600 2500
 $Comp
@@ -205,7 +204,7 @@ Wire Notes Line
 Text Notes 10050 14200 0    50   ~ 0
 1 - КРУГЛЫЙ ПОЯСОК
 Text Notes 9350 13900 0    138  ~ 0
-XS1, XS2 - РОЗЕТКИ BLD-6
+X5:
 Text Label 13250 10700 2    138  ~ 28
 3.0V
 Text Label 1000 15100 0    138  ~ 28
@@ -493,17 +492,6 @@ Wire Wire Line
 	10300 9700 12500 9700
 Wire Wire Line
 	10300 10700 12500 10700
-$Comp
-L BIG_schemes:ITC-1-0N6&1 A?
-U 1 1 611BFE40
-P 4000 3500
-F 0 "A?" H 5250 4650 138 0000 L CNB
-F 1 "ITC-1-0N6&1" H 4500 4650 50  0001 C CNB
-F 2 "" H 3500 4500 50  0001 C CNN
-F 3 "" H 3500 4500 50  0001 C CNN
-	1    4000 3500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	12500 6700 12250 6950
 Wire Wire Line
@@ -527,17 +515,17 @@ Wire Wire Line
 Text Label 12500 7450 0    138  ~ 28
 B1.LI-4
 Wire Wire Line
-	5000 5000 7400 5000
+	6000 5500 7400 5500
 Wire Wire Line
-	5000 5500 7400 5500
+	6000 5800 7400 5800
 Wire Wire Line
-	5000 6000 7400 6000
+	6000 6100 7400 6100
 Wire Wire Line
-	5000 6500 7400 6500
+	6000 6400 7400 6400
 Wire Wire Line
-	5000 7000 7400 7000
+	6000 6700 7400 6700
 Wire Wire Line
-	5000 7500 7400 7500
+	6000 7000 7400 7000
 $Comp
 L BIG_schemes:Диод_кремниевый VD?
 U 1 1 611FBFBD
@@ -647,14 +635,45 @@ Wire Wire Line
 Text Label 12950 2500 0    138  ~ 28
 B2.LI-4
 Connection ~ 12500 2950
+Text Notes 10600 12000 0    138  ~ 0
+НА BMS
+$Comp
+L BIG_schemes:ITC-1-1N8&1 A?
+U 1 1 61EE9F7A
+P 3500 5500
+F 0 "A?" H 5450 6400 138 0000 L CNN
+F 1 "ITC-1-1N8&1" H 4800 3600 50  0001 C CNB
+F 2 "" H -550 8400 50  0001 C CNN
+F 3 "" H -550 8400 50  0001 C CNN
+	1    3500 5500
+	1    0    0    -1  
+$EndComp
+Text Notes 11900 14300 0    138  ~ 0
+1
+Text Notes 11600 14300 0    138  ~ 0
+2
+Text Notes 11900 14600 0    138  ~ 0
+3
+Text Notes 11600 14600 0    138  ~ 0
+4
+Wire Notes Line
+	11500 14000 12100 14000
+Wire Notes Line
+	12100 14000 12100 14700
+Wire Notes Line
+	12100 14700 11500 14700
+Wire Notes Line
+	11500 14700 11500 14000
+Text Notes 12200 14200 0    50   ~ 0
+1 - КРУГЛЫЙ ПОЯСОК
+Text Notes 11500 13900 0    138  ~ 0
+X6:
 Wire Bus Line
 	21000 1750 21000 2800
 Wire Bus Line
+	1500 5600 1500 11500
+Wire Bus Line
 	11000 7050 11000 11700
 Wire Bus Line
-	1500 5150 1500 11500
-Wire Bus Line
 	7500 1750 7500 11500
-Text Notes 10600 12000 0    138  ~ 0
-НА BMS
 $EndSCHEMATC
