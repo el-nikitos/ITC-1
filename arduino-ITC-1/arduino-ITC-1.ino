@@ -13,7 +13,7 @@
 #define LED_3       16
 #define LED_2       17
 #define LED_1       5
-#define DRIVE       23
+#define DRIVE       21//23
 #define BTN_R       19
 #define BTN_L       18
 
@@ -23,7 +23,7 @@
 #define LION3       39
 #define LION4       36
 
-#define CHRGE_SENS  21
+#define CHRGE_SENS  23//21
 
 boolean b_BTN_L = false;
 boolean b_BTN_R = false;
@@ -70,10 +70,11 @@ float f_analog_koef = 0,  // Bird for Volt
       
 float f_2v5 = 2.5;
 
-int int_pwm_freq = 80, //было 80
-    int_pwm_resolution = 6,
+int int_pwm_freq = 50, //было 80
+    int_pwm_resolution = 8, //256 отсчетов -> 78 мкс/отсчет
     int_pwm_channel = 0,
-    int_pwm_koef = 7;
+    int_pwm_minimum_val = 11, // 858 мкс мин
+    int_pwm_koef = 2;
 
 String s_input_buf = "",
        s_input = "turn on";
@@ -181,9 +182,9 @@ void loop() {
   }
 
   if (b_engine_start == true) {
-    ledcWrite( int_pwm_channel, int_pwm_koef*int_speed );
+    ledcWrite( int_pwm_channel, int_pwm_minimum_val + int_pwm_koef*int_speed );
   } else {
-    ledcWrite( int_pwm_channel, 0 );
+    ledcWrite( int_pwm_channel, int_pwm_minimum_val );
   }
 
   if (int_wifi_connect_numbers <= 0)  {
