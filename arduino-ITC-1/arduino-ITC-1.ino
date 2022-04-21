@@ -71,10 +71,10 @@ float f_analog_koef = 0,  // Bird for Volt
 float f_2v5 = 2.5;
 
 int int_pwm_freq = 50, //было 80
-    int_pwm_resolution = 8, //256 отсчетов -> 78 мкс/отсчет
+    int_pwm_resolution = 10, //1024 отсчетов -> 19,5 мкс/отсчет
     int_pwm_channel = 0,
-    int_pwm_minimum_val = 11, // 858 мкс мин
-    int_pwm_koef = 2;
+    int_pwm_minimum_val = 45, // 877 мкс мин
+    int_pwm_koef = 6;
 
 String s_input_buf = "",
        s_input = "turn on";
